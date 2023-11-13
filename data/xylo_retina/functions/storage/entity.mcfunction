@@ -1,0 +1,24 @@
+data modify storage xylo_retina:output Target set value "ENTITY"
+data modify storage xylo_retina:output TargetedEntity set value {UUID:[I;0,0,0,0],Pos:[0.0f,0.0f,0.0f]}
+execute as @e[type=!#xylo_retina:ignore,tag=xylo_retina.possible_target] if score @s xylo_retina.id = $closest_cuboid_id xylo_retina.__variable__ run function xylo_retina:__private__/anonymous/10
+data modify storage xylo_retina:data Entity set from entity @e[type=!#xylo_retina:ignore,tag=xylo_retina.target,limit=1]
+data modify storage xylo_retina:output TargetedEntity.UUID set from storage xylo_retina:data Entity.UUID
+data modify storage xylo_retina:output TargetedEntity.Pos set from storage xylo_retina:data Entity.Pos
+data remove storage xylo_retina:data Entity
+data modify storage xylo_retina:output ContactSurface set from storage xylo_retina:data ContactSurface
+data modify storage xylo_retina:output ContactCoordinates set value [0.0d,0.0d,0.0d]
+execute if score $X0 xylo_retina.__variable__ matches ..-1 run scoreboard players add $X0 xylo_retina.__variable__ 480
+execute if score $Y0 xylo_retina.__variable__ matches ..-1 run scoreboard players add $Y0 xylo_retina.__variable__ 480
+scoreboard players operation $targeted_X xylo_retina.__variable__ += $origin_X xylo_retina.__variable__
+execute store result storage xylo_retina:output ContactCoordinates[0] double 0.0020833333333333333 run scoreboard players get $targeted_X xylo_retina.__variable__
+execute if score $nearest_axis xylo_retina.__variable__ matches 0 run function xylo_retina:__private__/if_else/26
+scoreboard players operation $targeted_Y xylo_retina.__variable__ += $origin_Y xylo_retina.__variable__
+execute store result storage xylo_retina:output ContactCoordinates[1] double 0.0020833333333333333 run scoreboard players get $targeted_Y xylo_retina.__variable__
+execute if score $nearest_axis xylo_retina.__variable__ matches 1 run function xylo_retina:__private__/if_else/27
+scoreboard players operation $targeted_Z xylo_retina.__variable__ += $origin_Z xylo_retina.__variable__
+execute store result storage xylo_retina:output ContactCoordinates[2] double 0.0020833333333333333 run scoreboard players get $targeted_Z xylo_retina.__variable__
+execute if score $nearest_axis xylo_retina.__variable__ matches 2 run function xylo_retina:__private__/if_else/28
+scoreboard players operation $total_distance xylo_retina.__variable__ /= 480 xylo_retina.__int__
+execute if score $total_distance xylo_retina.__variable__ matches ..-1 run scoreboard players operation $total_distance xylo_retina.__variable__ *= -1 xylo_retina.__int__
+execute store result storage xylo_retina:output Distance double 0.0020833333333333333 run scoreboard players get $total_distance xylo_retina.__variable__
+execute if data storage xylo_retina:input {EndpointEntity: true} summon minecraft:marker run function xylo_retina:__private__/anonymous/11

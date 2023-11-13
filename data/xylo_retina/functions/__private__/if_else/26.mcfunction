@@ -1,0 +1,2 @@
+scoreboard players operation $total_distance xylo_retina.__variable__ = $delta_X xylo_retina.__variable__
+scoreboard players operation $total_distance xylo_retina.__variable__ *= $X0 xylo_retina.__variable__

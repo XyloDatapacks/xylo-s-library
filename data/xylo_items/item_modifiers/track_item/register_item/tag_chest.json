@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:set_nbt",
+  "tag": "{xylo_items:{Slot:\"chest\",Slot_type:\"armor\"}}"
+}

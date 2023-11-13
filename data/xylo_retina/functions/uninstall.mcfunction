@@ -1,0 +1,3 @@
+scoreboard objectives remove xylo_retina.__variable__
+scoreboard objectives remove xylo_retina.id
+scoreboard objectives remove xylo_retina.hit

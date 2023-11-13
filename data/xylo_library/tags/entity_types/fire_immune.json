@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:strider",
+        "minecraft:zombified_piglin",
+        "minecraft:ghast",
+        "minecraft:hoglin",
+        "minecraft:magma_cube",
+        "minecraft:blaze",
+        "minecraft:wither_skeleton"
+    ]
+}

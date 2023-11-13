@@ -1,0 +1,11 @@
+{
+  "parent": "xylo_items:revoke",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "xylo_items:player_init"
+  }
+}

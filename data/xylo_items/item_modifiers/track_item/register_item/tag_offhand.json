@@ -1,0 +1,20 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{xylo_items:{Slot:\"offhand\",Slot_type:\"hand\"}}"
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "xylo_items:op"
+    },
+    "ops": [
+      {
+        "source": "register_item_inventory[{Slot:-106b}].tag.xylo_items.swap_time",
+        "target": "xylo_items.swap_time",
+        "op": "replace"
+      }
+    ]
+  }
+]

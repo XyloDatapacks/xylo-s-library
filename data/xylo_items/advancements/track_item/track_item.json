@@ -1,0 +1,40 @@
+{
+  "parent": "xylo_items:revoke",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "xitm.track_item.is_tracking": 1
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "nbt": "{xylo_items:{}}"
+          }
+        ]
+      }
+    },
+    "generic_change": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "requirement",
+      "generic_change"
+    ]
+  ],
+  "rewards": {
+    "function": "xylo_items:track_item/track_item"
+  }
+}

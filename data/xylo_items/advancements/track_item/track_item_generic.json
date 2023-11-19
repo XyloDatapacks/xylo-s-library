@@ -1,7 +1,7 @@
 {
   "parent": "xylo_items:revoke",
   "criteria": {
-    "requirement": {
+    "generic_change": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": [
@@ -14,11 +14,6 @@
                 "xitm.track_item.is_tracking": 1
               }
             }
-          }
-        ],
-        "items": [
-          {
-            "nbt": "{xylo_items:{}}"
           }
         ]
       }

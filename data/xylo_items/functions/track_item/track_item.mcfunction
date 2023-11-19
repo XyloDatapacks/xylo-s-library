@@ -2,6 +2,7 @@ execute store success score #xitm.track_item xitm.op if entity @s[advancements={
 
 # advancement reward function
 advancement revoke @s only xylo_items:track_item/track_item
+advancement revoke @s only xylo_items:track_item/track_item_generic
 execute if score $xylo_items xvc.load_status matches 0 run return 0
 #---------------------------
 

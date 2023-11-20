@@ -1,2 +1,2 @@
-tag @s add xylo_retina.target
-scoreboard players add @s xylo_retina.hit 1
+tag @s add retina.target
+scoreboard players add @s retina.hit 1

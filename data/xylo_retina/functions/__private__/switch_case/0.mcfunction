@@ -1,2 +1,0 @@
-execute if score $item_frame_facing xylo_retina.__variable__ matches 0..2 run function xylo_retina:__private__/switch_case/1
-execute if score $item_frame_facing xylo_retina.__variable__ matches 3..5 run function xylo_retina:__private__/switch_case/2

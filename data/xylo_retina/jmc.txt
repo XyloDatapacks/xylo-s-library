@@ -1,6 +1,6 @@
 LOAD=__load__
 TICK=__tick__
 PRIVATE=__private__
-VAR=xylo_retina.__variable__
-INT=xylo_retina.__int__
-STORAGE=xylo_retina.__storage__
+VAR=retina.__variable__
+INT=retina.__int__
+STORAGE=retina.__storage__

@@ -1,2 +1,2 @@
-scoreboard players set $entity_half_width xylo_retina.__variable__ 479
-scoreboard players set $entity_height xylo_retina.__variable__ 959
+scoreboard players set $entity_half_width retina.__variable__ 479
+scoreboard players set $entity_height retina.__variable__ 959

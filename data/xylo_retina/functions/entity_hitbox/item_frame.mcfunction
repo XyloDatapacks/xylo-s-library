@@ -1,2 +1,3 @@
-execute store result score $item_frame_facing xylo_retina.__variable__ run data get entity @s Facing
-function xylo_retina:__private__/switch_case/0
+execute store result score $item_frame_facing retina.__variable__ run data get entity @s Facing
+execute store result storage xylo_retina:retina.__storage__ switch_key int 1 run scoreboard players get $item_frame_facing retina.__variable__
+function xylo_retina:__private__/switch_case/0/select with storage xylo_retina:retina.__storage__

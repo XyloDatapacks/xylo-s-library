@@ -1,5 +1,9 @@
 function xylo_retina:__private__/anonymous/1
 execute summon marker run function xylo_retina:__private__/anonymous/2
+
+execute if score $expand_entity_check retina.__variable__ = $expand_entity_check retina.__variable__ run scoreboard players operation $entity_half_width retina.__variable__ += $expand_entity_check retina.__variable__
+execute if score $expand_entity_check retina.__variable__ = $expand_entity_check retina.__variable__ run scoreboard players operation $entity_height retina.__variable__ += $expand_entity_check retina.__variable__
+
 scoreboard players operation $entity_X0 retina.__variable__ = $entity_frac_X retina.__variable__
 scoreboard players operation $entity_X0 retina.__variable__ -= $entity_half_width retina.__variable__
 scoreboard players operation $entity_X0 retina.__variable__ > 0 retina.__int__

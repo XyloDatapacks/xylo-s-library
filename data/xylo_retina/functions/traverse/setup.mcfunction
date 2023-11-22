@@ -6,9 +6,11 @@ data remove storage xylo_retina:output TargetedEntity
 data remove storage xylo_retina:output PlacingPosition
 data remove storage xylo_retina:output ContactSurface
 data remove storage xylo_retina:output HitFace
+data remove storage xylo_retina:output ContactCoordinates
 execute unless score $override_executing retina.__variable__ matches 1 positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0] add retina.executing
 # moved to anonymous/0: execute if score $single_call retina.__variable__ matches 1.. run function xylo_retina:__private__/if_else/0
 execute summon minecraft:marker run function xylo_retina:__private__/anonymous/0
+scoreboard players reset $override_input_pitch retina.__variable__
 
 #moved this block below to reuse coord get from anonymous/0
 scoreboard players operation $test_X retina.__variable__ = $X retina.__variable__
@@ -86,9 +88,10 @@ scoreboard players set $step retina.__variable__ 0
 #execute if score $offset_Y retina.__variable__ matches 608..610 positioned ~ ~1.27 ~ run function xylo_retina:traverse/loop
 #execute if score $offset_Y retina.__variable__ matches 192 positioned ~ ~0.4 ~ run function xylo_retina:traverse/loop
 function xylo_retina:traverse/loop
-
 execute if score $hit_block retina.__variable__ matches 1.. run function xylo_retina:storage/block
 execute if score $hit_entity retina.__variable__ matches 1.. run function xylo_retina:storage/entity
+scoreboard players reset $expand_entity_check retina.__variable__
+
 function #xylo_retina:on_hit
 execute unless score $override_executing retina.__variable__ matches 1 positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0] remove retina.executing
 scoreboard players reset $override_executing retina.__variable__

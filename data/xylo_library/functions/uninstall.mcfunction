@@ -15,6 +15,7 @@ scoreboard objectives remove xlib.player.rotation_y
 scoreboard objectives remove xlib.player.motion_x 
 scoreboard objectives remove xlib.player.motion_y 
 scoreboard objectives remove xlib.player.motion_z 
+scoreboard objectives remove xlib.player.on_ground
 
 
 # functions

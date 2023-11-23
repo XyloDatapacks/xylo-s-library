@@ -64,6 +64,7 @@ scoreboard objectives add xlib.player.rotation_y dummy
 scoreboard objectives add xlib.player.motion_x dummy
 scoreboard objectives add xlib.player.motion_y dummy
 scoreboard objectives add xlib.player.motion_z dummy
+scoreboard objectives add xlib.player.on_ground dummy
 
 
 # functions

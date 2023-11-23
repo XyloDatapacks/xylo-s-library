@@ -1,5 +1,5 @@
-data merge storage xylo_retina:input {HorizontalCount:1b,VerticalCount:1b,CenteredCount:0b,SpreadFactor:[100,100],EndpointEntity:0b,MaxRecursionDepth:50,TargetEntities:true,MaxRecursionDepth:50}
-execute store result storage xylo_retina:input MaxRecursionDepth int 0.001 run scoreboard players get xproj.position_correction.max_distance xproj.op
+data merge storage xylo_retina:input {HorizontalCount:1b,VerticalCount:1b,CenteredCount:0b,SpreadFactor:[100,100],EndpointEntity:0b,MaxRecursionDepth:50,TargetEntities:true}
+execute store result storage xylo_retina:input MaxTravelDistance int 0.001 run scoreboard players get xproj.position_correction.max_distance xproj.op
 scoreboard players set $override_executing retina.__variable__ 1
 scoreboard players set $expand_entity_check retina.__variable__ 144
 function xylo_retina:traverse/setup

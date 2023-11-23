@@ -25,6 +25,13 @@ execute store result score $block_distance retina.__variable__ run scoreboard pl
 execute store result score $hit_block retina.__variable__ store result score $hit_entity retina.__variable__ run scoreboard players set $contact retina.__variable__ 0
 execute store result score $max_depth retina.__variable__ run data get storage xylo_retina:input MaxRecursionDepth
 
+execute store result score $max_traveled_distance_square retina.__variable__ run data get storage xylo_retina:input MaxTravelDistance
+scoreboard players operation $max_traveled_distance_square retina.__variable__ *= $max_traveled_distance_square retina.__variable__
+scoreboard players set $traveled_distance_square retina.__variable__ 0
+scoreboard players set $traveled_distance_X retina.__variable__ 0
+scoreboard players set $traveled_distance_Y retina.__variable__ 0
+scoreboard players set $traveled_distance_Z retina.__variable__ 0
+
 scoreboard players operation $origin_X retina.__variable__ = $X retina.__variable__
 scoreboard players operation $frac_origin_X retina.__variable__ = $X retina.__variable__
 scoreboard players operation $frac_origin_X retina.__variable__ %= 480 retina.__int__
@@ -91,6 +98,7 @@ function xylo_retina:traverse/loop
 execute if score $hit_block retina.__variable__ matches 1.. run function xylo_retina:storage/block
 execute if score $hit_entity retina.__variable__ matches 1.. run function xylo_retina:storage/entity
 scoreboard players reset $expand_entity_check retina.__variable__
+scoreboard players reset $ignore_blocks retina.__variable__
 
 function #xylo_retina:on_hit
 execute unless score $override_executing retina.__variable__ matches 1 positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[dx=0] remove retina.executing

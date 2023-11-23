@@ -13,6 +13,6 @@ scoreboard players set @s[scores={xlib.player.reapawn_status=1}] xlib.player.rea
 scoreboard players set @s[scores={xlib.player.reapawn_status=-1,xlib.player.health_obj=1..}] xlib.player.reapawn_status 1
 execute if score @s xlib.player.died matches 1 run scoreboard players set @s xlib.player.reapawn_status -1
 
-
+execute store result score @s xlib.player.on_ground run data get storage xylo_library:op player_data.OnGround
 
 function #xylo_library:player_tick

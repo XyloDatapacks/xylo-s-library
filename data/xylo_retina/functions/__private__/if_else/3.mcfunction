@@ -1,3 +1,2 @@
-function xylo_retina:find_closest_surface/ray_intersects_with_surface
-data modify storage xylo_retina:output HitFace set value "West"
-execute if score $check_for_head retina.__variable__ matches 1.. if score $Y_intersection retina.__variable__ >= $head_Y retina.__variable__ run data modify storage xylo_retina:output HitEntityHead set value true
+execute align xyz if entity @e[type=!#xylo_retina:intangible,tag=!retina.ignore,tag=!retina.executing,dx=0,dy=0,dz=0] run function xylo_retina:check/entity/found
+scoreboard players set __if_else__ retina.__variable__ 1

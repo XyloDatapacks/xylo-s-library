@@ -3,7 +3,5 @@ execute if score $debug_messages retina.__variable__ matches 1.. run tellraw @a 
 scoreboard players operation $distance_X retina.__variable__ += $delta_X retina.__variable__
 scoreboard players operation $step_X retina.__variable__ += $sign_X retina.__variable__
 scoreboard players operation $int_X retina.__variable__ += $sign_X retina.__variable__
-
-scoreboard players add $traveled_distance_X retina.__variable__ 1
 execute if score $sign_X retina.__variable__ matches -1 positioned ~-1 ~0 ~0 run function xylo_retina:check/main
 execute if score $sign_X retina.__variable__ matches 1 positioned ~1 ~0 ~0 run function xylo_retina:check/main

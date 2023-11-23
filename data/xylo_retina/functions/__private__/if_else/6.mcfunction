@@ -1,3 +1,1 @@
-function xylo_retina:find_closest_surface/ray_intersects_with_surface
-data modify storage xylo_retina:output HitFace set value "Top"
-execute if score $check_for_head retina.__variable__ matches 1.. if score $Y_intersection retina.__variable__ >= $head_Y retina.__variable__ run data modify storage xylo_retina:output HitEntityHead set value true
+execute align xyz positioned ~-1 ~-1 ~-1 as @e[type=!#xylo_retina:intangible,tag=!retina.executing,dx=2,dy=2,dz=2] at @s run function xylo_retina:check/entity/get_hitbox

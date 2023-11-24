@@ -15,4 +15,9 @@ execute if score @s xlib.player.died matches 1 run scoreboard players set @s xli
 
 execute store result score @s xlib.player.on_ground run data get storage xylo_library:op player_data.OnGround
 
+execute store success score @s xlib.player.jumped run scoreboard players reset @s[scores={xlib.player._jump=1..}] xlib.player._jump
+execute store success score @s xlib.player.dealth_damage run scoreboard players reset @s[scores={xlib.player._dmg_dealth=1..}] xlib.player._dmg_dealth
+execute store success score @s xlib.player.taken_damage run scoreboard players reset @s[scores={xlib.player._dmg_taken=1..}] xlib.player._dmg_taken
+
+
 function #xylo_library:player_tick

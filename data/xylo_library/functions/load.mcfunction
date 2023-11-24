@@ -66,6 +66,12 @@ scoreboard objectives add xlib.player.motion_x dummy
 scoreboard objectives add xlib.player.motion_y dummy
 scoreboard objectives add xlib.player.motion_z dummy
 scoreboard objectives add xlib.player.on_ground dummy
+scoreboard objectives add xlib.player._jump minecraft.custom:minecraft.jump
+scoreboard objectives add xlib.player.jumped dummy
+scoreboard objectives add xlib.player._dmg_dealth minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add xlib.player.dealth_damage dummy
+scoreboard objectives add xlib.player._dmg_taken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add xlib.player.taken_damage dummy
 
 
 # functions

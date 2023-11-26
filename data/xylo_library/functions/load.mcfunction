@@ -41,6 +41,7 @@ scoreboard players set #50 xconst 50
 scoreboard players set #60 xconst 60
 scoreboard players set #80 xconst 80
 scoreboard players set #100 xconst 100
+scoreboard players set #119 xconst 119
 scoreboard players set #150 xconst 150
 scoreboard players set #200 xconst 200
 scoreboard players set #250 xconst 250
@@ -49,8 +50,10 @@ scoreboard players set #500 xconst 500
 scoreboard players set #600 xconst 600
 scoreboard players set #1000 xconst 1000
 scoreboard players set #2000 xconst 2000
+scoreboard players set #4214 xconst 4214
 scoreboard players set #5000 xconst 5000
 scoreboard players set #10000 xconst 10000
+scoreboard players set #50436 xconst 50436
 scoreboard players set #99000 xconst 99000
 scoreboard players set #100000 xconst 100000
 

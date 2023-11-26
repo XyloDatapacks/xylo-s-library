@@ -1,118 +1,19 @@
-#==<SQRT>========================================================================
-# #xlib.sqrt xlib.op è il valore in ingresso di cui vuoi la radice quadrata
-# ed è anche il valore di output
-#================================================================================
+#sqrt
+execute store result score stemp0 xlib.op store result score stemp1 xlib.op store result score stemp2 xlib.op store result score stemp3 xlib.op run scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op = #xlib.utilities.math.sqrt.input xlib.op
+execute if score #xlib.utilities.math.sqrt.input xlib.op matches ..13924 run function xylo_library:utilities/math/sqrt/sqrt1
+execute if score #xlib.utilities.math.sqrt.input xlib.op matches 13925..16777216 run function xylo_library:utilities/math/sqrt/sqrt2
+execute if score #xlib.utilities.math.sqrt.input xlib.op matches 16777217.. run function xylo_library:utilities/math/sqrt/sqrt3
+scoreboard players operation stemp0 xlib.op /= #xlib.utilities.math.sqrt.out xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op += stemp0 xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op /= #2 xconst
+scoreboard players operation stemp1 xlib.op /= #xlib.utilities.math.sqrt.out xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op += stemp1 xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op /= #2 xconst
+scoreboard players operation stemp2 xlib.op /= #xlib.utilities.math.sqrt.out xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op += stemp2 xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op /= #2 xconst
+scoreboard players operation stemp3 xlib.op /= #xlib.utilities.math.sqrt.out xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op += stemp3 xlib.op
+scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op /= #2 xconst
 
-scoreboard players operation #xlib.sqrt_init xlib.op = #xlib.sqrt xlib.op
-
-#inizio
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_xn xlib.op /= #2 xconst
-
-#iterazione 1
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 2
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 3
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 4
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 5
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 6
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 7
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 8
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 9
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 10
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 11
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 12
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 13
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 14
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#iterazione 15
-scoreboard players operation #xlib.sqrt_math xlib.op = #xlib.sqrt_init xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op += #xlib.sqrt_xn xlib.op
-scoreboard players operation #xlib.sqrt_math xlib.op /= #2 xconst
-scoreboard players operation #xlib.sqrt_xn xlib.op = #xlib.sqrt_math xlib.op
-
-#fine
-scoreboard players operation #xlib.sqrt xlib.op = #xlib.sqrt_xn xlib.op
+tellraw @a {"score":{"objective":"xlib.op","name":"#xlib.utilities.math.sqrt.out"}}

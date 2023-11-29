@@ -1,3 +1,5 @@
+#https://discord.com/channels/154777837382008833/1163074331966971925/1163126677912694894
+
 #sqrt
 execute store result score stemp0 xlib.op store result score stemp1 xlib.op store result score stemp2 xlib.op store result score stemp3 xlib.op run scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op = #xlib.utilities.math.sqrt.input xlib.op
 execute if score #xlib.utilities.math.sqrt.input xlib.op matches ..13924 run function xylo_library:utilities/math/sqrt/sqrt1

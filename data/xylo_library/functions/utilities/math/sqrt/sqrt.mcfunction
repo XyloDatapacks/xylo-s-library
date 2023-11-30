@@ -18,4 +18,3 @@ scoreboard players operation stemp3 xlib.op /= #xlib.utilities.math.sqrt.out xli
 scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op += stemp3 xlib.op
 scoreboard players operation #xlib.utilities.math.sqrt.out xlib.op /= #2 xconst
 
-tellraw @a {"score":{"objective":"xlib.op","name":"#xlib.utilities.math.sqrt.out"}}

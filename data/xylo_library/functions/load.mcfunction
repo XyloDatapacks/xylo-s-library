@@ -15,6 +15,7 @@ scoreboard objectives add xlib.test dummy
 # const
 scoreboard objectives add xconst dummy
 scoreboard players set #-1000 xconst -1000
+scoreboard players set #-5 xconst -5
 scoreboard players set #-2 xconst -2
 scoreboard players set #-1 xconst -1
 scoreboard players set #0 xconst 0

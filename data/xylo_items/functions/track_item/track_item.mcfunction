@@ -9,6 +9,8 @@ execute if score $xylo_items xvc.load_status matches 0 run return 0
 #get data
 data modify storage xylo_items:op register_item_inventory set from entity @s Inventory
 execute store result score @s xlib.player.selected_slot run data get entity @s SelectedItemSlot
+execute store result storage xylo_items:op register_item_selected_slot.slot byte 1 run scoreboard players get @s xlib.player.selected_slot
+function xylo_items:track_item/get_selected_item with storage xylo_items:op register_item_selected_slot
 
 # tag items
 execute if score #xitm.track_item xitm.op matches 1 unless score @s xitm.track_item.skip_track matches 1 run function xylo_items:track_item/register_item

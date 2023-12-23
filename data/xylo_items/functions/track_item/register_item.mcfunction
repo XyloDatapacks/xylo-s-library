@@ -6,7 +6,7 @@
 scoreboard players set @s xitm.track_item.is_tracking 1
 
 # double swap check
-execute if score @s xitm.track_item.double_swap_time >= #xlib.time xlib.op if predicate xylo_items:track_item/double_swap_check run function xylo_items:track_item/double_swap_check
+execute if score @s xitm.track_item.double_swap_time >= #xlib.time xlib.op if data storage xylo_items:op register_item_selected_item{tag:{xylo_items:{Slot:"offhand"}}} run function xylo_items:track_item/double_swap_check
 execute if data storage xylo_items:op register_item_inventory[{Slot:-106b}].tag.xylo_items{Slot:"mainhand"} run function xylo_items:track_item/double_swap_init
 
 # tag items

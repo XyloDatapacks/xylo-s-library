@@ -5,4 +5,4 @@ data remove storage xylo_library:op player_data.Inventory[{Slot:-106b}]
 #clear item from inventory
 item replace entity @s weapon.offhand with minecraft:air
 
-execute at @s anchored eyes positioned ^ ^ ^ run function xylo_items:item_class/throwable/throw/get_data
+execute at @s anchored eyes positioned ^ ^ ^ run function xylo_items:item_class/throwable/throw/start

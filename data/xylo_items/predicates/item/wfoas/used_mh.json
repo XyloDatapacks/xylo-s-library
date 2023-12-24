@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "xitm.wfoas_used": 1
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": [
+            "minecraft:warped_fungus_on_a_stick"
+          ]
+        }
+      }
+    }
+  }
+]

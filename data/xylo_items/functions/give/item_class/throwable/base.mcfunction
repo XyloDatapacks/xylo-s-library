@@ -1,1 +1,1 @@
-give @s minecraft:iron_sword{xylo_items:{throw:{power:1,proj_tags:["test"]}}}
+give @s minecraft:warped_fungus_on_a_stick{xylo_items:{item_class:"throwable",throw:{power:1,correct_landing:1b,proj_tags:["test"]}}}

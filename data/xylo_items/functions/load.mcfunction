@@ -8,6 +8,8 @@ scoreboard objectives add xitm.test dummy
 # objectives
 scoreboard objectives add xitm.wfoas_used_stat minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add xitm.wfoas_used dummy
+scoreboard objectives add xitm.wfoas_used_mh dummy
+scoreboard objectives add xitm.wfoas_used_oh dummy
 scoreboard objectives add xitm.track_item.skip_track dummy
 scoreboard objectives add xitm.track_item.is_tracking dummy
 scoreboard objectives add xitm.track_item.double_swap_time dummy

@@ -19,5 +19,5 @@ execute store success score @s xlib.player.jumped run scoreboard players reset @
 execute store success score @s xlib.player.dealth_damage run scoreboard players reset @s[scores={xlib.player._dmg_dealth=1..}] xlib.player._dmg_dealth
 execute store success score @s xlib.player.taken_damage run scoreboard players reset @s[scores={xlib.player._dmg_taken=1..}] xlib.player._dmg_taken
 
-
+function xylo_items:player_tick
 function #xylo_library:player_tick

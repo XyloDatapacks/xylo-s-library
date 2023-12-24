@@ -14,4 +14,4 @@ execute if score @s xlib.player.selected_slot matches 8 run data remove storage 
 #clear item from inventory
 item replace entity @s weapon.mainhand with minecraft:air
 
-execute at @s anchored eyes positioned ^ ^ ^ run function xylo_items:item_class/throwable/throw/get_data
+execute at @s anchored eyes positioned ^ ^ ^ run function xylo_items:item_class/throwable/throw/start

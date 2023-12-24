@@ -1,0 +1,1 @@
+give @s minecraft:iron_sword{xylo_items:{throw:{power:1,proj_tags:["test"]}}}

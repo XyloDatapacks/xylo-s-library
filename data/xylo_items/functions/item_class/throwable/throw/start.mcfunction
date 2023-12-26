@@ -1,3 +1,18 @@
+# "xylo_items:op thrown_item" -> tag.xylo_items.throw
+#   power: the absolute value of the motion
+#   correct_landing: true/false to apply projectile correction or not
+#   NoGravity: true/false to disable gravity or not
+#
+#   proj_tags: list of tags to add to display entity
+#   transformation: transformation to apply to display entity
+#   item_display: how the item is displayed (fixed, head, ...)
+#
+#   passenger: {id: .. , data:{...} }
+#       id: id of the passenger entity
+#       data: compound with entity data
+#   function: function to run as the display entity at the projectile position
+
+
 # in: "xylo_items:op thrown_item"
 
 data modify storage xylo_items:op thrown_data set from storage xylo_items:op thrown_item.tag.xylo_items.throw
@@ -6,6 +21,9 @@ data modify storage xylo_items:op thrown_data set from storage xylo_items:op thr
 data remove storage xylo_items:op macro_data
 data modify storage xylo_items:op macro_data.power set from storage xylo_items:op thrown_data.power
 function xylo_items:item_class/throwable/throw/motion/_motion with storage xylo_items:op macro_data
+# for proj correction
+data remove storage xylo_projectiles:op projectile_correction_setup
+data modify storage xylo_projectiles:op projectile_correction_setup.motion set from storage xylo_items:op macro_data.motion
 
 # get owner
 data modify storage xylo_items:op macro_data.owner set from storage xylo_library:op player_data.UUID
@@ -13,9 +31,6 @@ data modify storage xylo_items:op macro_data.owner set from storage xylo_library
 data modify storage gu:main in set from storage xylo_library:op player_data.UUID
 function xylo_library:utilities/uuid/generate_from_storage
 data modify storage xylo_items:op macro_data.shooter set from storage gu:main out
-# passengers
-data modify storage xylo_items:op macro_data.passenger set value ""
-data modify storage xylo_items:op macro_data.passenger set from storage xylo_items:op thrown_data.passenger
 
 
 # summon and apply data

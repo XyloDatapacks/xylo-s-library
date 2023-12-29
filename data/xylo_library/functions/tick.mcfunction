@@ -4,6 +4,9 @@ execute if score $xylo_library xvc.load_status matches 0 run return 0
 scoreboard players add #xlib.time xlib.op 1
 
 # timers
+scoreboard players operation #xlib.timer.2tick xlib.op = #xlib.time xlib.op
+scoreboard players operation #xlib.timer.2tick xlib.op %= #2 xconst
+
 scoreboard players operation #xlib.timer.4tick xlib.op = #xlib.time xlib.op
 scoreboard players operation #xlib.timer.4tick xlib.op %= #4 xconst
 

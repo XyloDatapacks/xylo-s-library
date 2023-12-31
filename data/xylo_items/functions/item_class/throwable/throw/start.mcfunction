@@ -17,8 +17,10 @@
 
 data modify storage xylo_items:op thrown_data set from storage xylo_items:op thrown_item.tag.xylo_items.throw
 
+# init macro storage
+data modify storage xylo_items:op macro_data set value {x:0,y:0,z:0}
+
 # get motion 
-data remove storage xylo_items:op macro_data
 data modify storage xylo_items:op macro_data.power set from storage xylo_items:op thrown_data.power
 function xylo_items:item_class/throwable/throw/motion/_motion with storage xylo_items:op macro_data
 # for proj correction
@@ -32,6 +34,8 @@ data modify storage gu:main in set from storage xylo_library:op player_data.UUID
 function xylo_library:utilities/uuid/generate_from_storage
 data modify storage xylo_items:op macro_data.shooter set from storage gu:main out
 
+# offset
+data modify storage xylo_items:op macro_data merge from storage xylo_items:op thrown_data.offset
 
 # summon and apply data
 execute store result score #xitm.item_class.throwable.throw.correction xitm.op if data storage xylo_items:op thrown_data.correct_landing

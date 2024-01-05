@@ -13,6 +13,9 @@ scoreboard players operation #xlib.timer.4tick xlib.op %= #4 xconst
 scoreboard players operation #xlib.timer.5tick xlib.op = #xlib.time xlib.op
 scoreboard players operation #xlib.timer.5tick xlib.op %= #5 xconst
 
+scoreboard players operation #xlib.timer.10tick xlib.op = #xlib.time xlib.op
+scoreboard players operation #xlib.timer.10tick xlib.op %= #10 xconst
+
 scoreboard players operation #xlib.timer.1sec xlib.op = #xlib.time xlib.op
 scoreboard players operation #xlib.timer.1sec xlib.op %= #20 xconst
 

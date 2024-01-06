@@ -2,7 +2,7 @@
 schedule clear xylo_library:load_check
 
 # validation
-function xylo_library:xvc/xvc_start
+function xylo_library:xvc/start
 execute if score $xylo_library xvc.load_status matches 0 run return 0
 scoreboard players set $xylo_library xvc.load_status 1
 

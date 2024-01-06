@@ -1,6 +1,7 @@
 # load
 scoreboard players set $xylo_library xvc.load_status 1
 data modify storage xvc_version:op packs append value {namespace:"xylo_library",version:10000,name:"Xylo's Library"}
+execute store result storage xvc_version:op packs[-1].index int 1 run scoreboard players add #pack_count xvc.load_status 1
 
 # required packs
 #data modify storage xvc_version:op packs[-1].supported append value {namespace:"example",version:10000}

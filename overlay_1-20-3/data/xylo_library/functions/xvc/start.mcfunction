@@ -5,10 +5,10 @@ scoreboard objectives add xvc.op dummy
 scoreboard objectives add xvc.load_status dummy
 
 data remove storage xvc_version:op packs
+function #xylo_library:xvc_load
 function xylo_library:xvc/load
 function xylo_projectiles:xvc/load
 function xylo_items:xvc/load
-function #xylo_library:xvc_load
 
 tellraw @a {"text":"\n\n=================================","color":"#427E6B"}
 tellraw @a {"text":"Xylo's Datapacks Validation:\n","color":"aqua","bold":true}

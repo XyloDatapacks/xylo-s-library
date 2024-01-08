@@ -2,6 +2,7 @@
     "values": 
     [
         "xylo_library:load_check",
-        "delta:internal/technical/load"
+        "delta:internal/technical/load",
+        "#smithed.actionbar:load"
     ]
 }

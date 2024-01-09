@@ -63,7 +63,7 @@
               "block": {
                 "tag": "minecraft:beds",
                 "state": {
-                  "occupied": false
+                  "occupied": "false"
                 }
               }
             }
@@ -134,7 +134,7 @@
               "block": {
                 "tag": "minecraft:beds",
                 "state": {
-                  "occupied": true
+                  "occupied": "true"
                 }
               }
             }
@@ -194,11 +194,6 @@
             "range": 1
           }
         ],
-        "item": {
-          "items": [
-            "minecraft:air"
-          ]
-        },
         "location": [
           {
             "condition": "minecraft:location_check",
@@ -207,7 +202,7 @@
               "block": {
                 "tag": "minecraft:beds",
                 "state": {
-                  "occupied": false
+                  "occupied": "false"
                 }
               }
             }
@@ -267,11 +262,6 @@
             "range": 1
           }
         ],
-        "item": {
-          "items": [
-            "minecraft:air"
-          ]
-        },
         "location": [
           {
             "condition": "minecraft:location_check",
@@ -280,7 +270,7 @@
               "block": {
                 "tag": "minecraft:beds",
                 "state": {
-                  "occupied": true
+                  "occupied": "true"
                 }
               }
             }

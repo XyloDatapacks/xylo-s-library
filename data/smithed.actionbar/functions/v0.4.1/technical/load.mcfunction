@@ -15,4 +15,8 @@ scoreboard players set $max.freeze smithed.actionbar.const 50
 scoreboard players set $min.freeze smithed.actionbar.const 0
 scoreboard players set #100 smithed.actionbar.const 100
 
+advancement revoke @a only smithed.actionbar:v0.4.1/vanilla/bed/clicked_bed
+advancement revoke @a only smithed.actionbar:v0.4.1/vanilla/bed/slept_in_bed
+advancement revoke @a only smithed.actionbar:v0.4.1/vanilla/container/clicked_lockable_block
+
 schedule function smithed.actionbar:v0.4.1/technical/tick 1

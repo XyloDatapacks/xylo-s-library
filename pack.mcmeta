@@ -2,14 +2,14 @@
     "id": "xylo.xylo_library",
     "pack": {
         "description": "Xylo's Library. By Xylo_Datapacks",
-        "pack_format": 18,
+        "pack_format": 26,
         "supported_formats": [18, 26]
     },
     "overlays": {
         "entries": [
             {
-                "formats": 26,
-                "directory": "overlay_1-20-3"
+                "formats": 18,
+                "directory": "overlay_1-20-2"
             }
         ]
     }

@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "xlib.player.double_sneak": 1
+  }
+}

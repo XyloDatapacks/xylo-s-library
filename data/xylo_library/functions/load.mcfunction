@@ -84,7 +84,12 @@ scoreboard objectives add xlib.player._dmg_dealth minecraft.custom:minecraft.dam
 scoreboard objectives add xlib.player.dealth_damage dummy
 scoreboard objectives add xlib.player._dmg_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add xlib.player.taken_damage dummy
-
+scoreboard objectives add xlib.player.leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add xlib.player.joining minecraft.custom:minecraft.leave_game
+scoreboard objectives add xlib.player.sneak_time minecraft.custom:minecraft.sneak_time
+scoreboard objectives add xlib.player.sneaking dummy
+scoreboard objectives add xlib.player.double_sneak dummy
+scoreboard objectives add xlib.player.double_sneak_time dummy
 
 # functions
 function xylo_library:utilities/uuid/load

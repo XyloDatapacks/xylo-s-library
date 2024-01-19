@@ -32,9 +32,9 @@ execute store success score @s xlib.player.joining run scoreboard players reset 
 #==<Double Sneak Detection>==#
 
 # double sneak
-scoreboard players operation @s[scores={xlib.player.sneak_time=1,xlib.player.sneaking=0}] xlib.player.double_sneak_time = #xlib.time xlib.op
-scoreboard players add @s[scores={xlib.player.sneak_time=1,xlib.player.sneaking=0}] xlib.player.double_sneak_time 10
-scoreboard players remove @s[scores={xlib.player.sneak_time=1,xlib.player.sneaking=0}] xlib.player.double_sneak 1
+scoreboard players operation @s[scores={xlib.player.sneak_time=1..,xlib.player.sneaking=0}] xlib.player.double_sneak_time = #xlib.time xlib.op
+scoreboard players add @s[scores={xlib.player.sneak_time=1..,xlib.player.sneaking=0}] xlib.player.double_sneak_time 10
+scoreboard players remove @s[scores={xlib.player.sneak_time=1..,xlib.player.sneaking=0}] xlib.player.double_sneak 1
 scoreboard players remove @s[scores={xlib.player.sneak_time=0,xlib.player.sneaking=1}] xlib.player.double_sneak 1
 
 execute if score @s[scores={xlib.player.double_sneak=..1}] xlib.player.double_sneak_time < #xlib.time xlib.op run scoreboard players set @s xlib.player.double_sneak 0

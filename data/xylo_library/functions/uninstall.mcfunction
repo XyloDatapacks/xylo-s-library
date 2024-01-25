@@ -4,7 +4,9 @@ scoreboard objectives remove xlib.test
 # const
 scoreboard objectives remove xconst 
 
-# objectives
+#==<objectives>==#
+
+# player
 scoreboard objectives remove xlib.player.selected_slot 
 scoreboard objectives remove xlib.player.health_obj 
 scoreboard objectives remove xlib.player._died 
@@ -28,6 +30,11 @@ scoreboard objectives remove xlib.player.sneak_time
 scoreboard objectives remove xlib.player.sneaking 
 scoreboard objectives remove xlib.player.double_sneak 
 scoreboard objectives remove xlib.player.double_sneak_time
+
+# clone
+scoreboard objectives remove xlib.internal.clone.generate.end_time
+
+#==<Other Inits>==#
 
 # functions
 kill 0000000d-0109-0097-0116-000000000104 

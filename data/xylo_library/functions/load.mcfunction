@@ -66,7 +66,9 @@ scoreboard players set #90000 xconst 90000
 scoreboard players set #99000 xconst 99000
 scoreboard players set #100000 xconst 100000
 
-# objectives
+#==<objectives>==#
+
+# player
 scoreboard objectives add xlib.player.selected_slot dummy
 scoreboard objectives add xlib.player.health_obj health
 scoreboard objectives add xlib.player._died minecraft.custom:minecraft.deaths
@@ -90,6 +92,11 @@ scoreboard objectives add xlib.player.sneak_time minecraft.custom:minecraft.snea
 scoreboard objectives add xlib.player.sneaking dummy
 scoreboard objectives add xlib.player.double_sneak dummy
 scoreboard objectives add xlib.player.double_sneak_time dummy
+
+# clone
+scoreboard objectives add xlib.internal.clone.generate.end_time dummy
+
+#==<Other Inits>==#
 
 # functions
 function xylo_library:utilities/uuid/load

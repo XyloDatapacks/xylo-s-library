@@ -1,3 +1,10 @@
+# in: "xylo_library:op clone_input_data"
+#   duration: sets a scoreboard to the time time the clone should be killed at
+#   aoe.tags: tags to add to aoe
+#   marker.tags: tags to add to marker
+#   marker.data: data to merge with marker data
+#   hitbox.tags: tags to add to hitbox entity
+
 ride @s dismount
 data remove storage xylo_library:op clone_data
 
@@ -14,9 +21,6 @@ function xylo_library:utilities/player_name/get_name
 data modify storage xylo_library:op clone_data.name set from storage xylo_library:op player_name
 
 #==<Clone>==#
-
-# get clone data from input
-execute store result score #xlib.internal.clone.generate.duration xlib.op run data get storage xylo_library:op clone_data.duration
 
 # get position
 execute summon minecraft:marker run function xylo_library:internal/clone/generate/get_position

@@ -13,6 +13,7 @@ execute on vehicle on passengers if entity @s[type=minecraft:marker] run data mo
 # get marker hex uuid
 execute on vehicle on passengers if entity @s[type=minecraft:marker] run function xylo_library:utilities/uuid/generate
 data modify storage xylo_library:op clone_data.uuid set from storage gu:main out
+execute on vehicle on passengers if entity @s[type=minecraft:marker] run data modify entity @s data.xylo_library.clone.marker_uuid set from storage xylo_library:op clone_data.uuid
 
 # get hitbox hex uuid
 execute on vehicle on passengers if entity @s[tag=xlib.internal.clone.hitbox] run function xylo_library:utilities/uuid/generate

@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "vehicle": {
+      "passenger": {
+        "type": "#xylo_library:player_or_clone",
+        "nbt": "{Tags:[\"xlib.internal.clone.hitbox\"]}"
+      }
+    }
+  }
+}

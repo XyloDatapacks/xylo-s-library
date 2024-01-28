@@ -5,6 +5,9 @@
 #   marker.data: data to merge with marker data
 #   hitbox.tags: tags to add to hitbox entity
 
+# out: "xylo_library:op clone_owner_hex_uuid"
+# out: "xylo_library:op clone_data"
+
 ride @s dismount
 data remove storage xylo_library:op clone_data
 
@@ -30,5 +33,15 @@ function xylo_library:internal/clone/generate/clone_summon with storage xylo_lib
 
 #==<Save Data In Player Storage>==#
 
+# player hex uuid
+data remove storage xylo_library:op clone_owner_hex_uuid
+data modify storage xylo_library:op clone_owner_hex_uuid.player_hex_uuid set from storage xylo_library:op clone_data.player_hex_uuid
+
+# clear useless data
+data remove storage xylo_library:op clone_data.name
+data remove storage xylo_library:op clone_data.player_uuid
+data remove storage xylo_library:op clone_data.player_hex_uuid
+data modify storage xylo_library:op clone_data.tags set from storage xylo_library:op clone_input_data.tags
+
 # save position in player storage
-function xylo_library:internal/clone/generate/save_clone_data_in_storage with storage xylo_library:op clone_data
+function xylo_library:internal/clone/generate/save_clone_data_in_storage with storage xylo_library:op clone_owner_hex_uuid

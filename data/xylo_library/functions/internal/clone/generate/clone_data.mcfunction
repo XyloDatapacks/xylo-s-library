@@ -1,23 +1,26 @@
 tag @s remove xlib.internal.clone_new
 
+execute on vehicle positioned ~ ~10000 ~ run ride @e[type=minecraft:wandering_trader,distance=..0.001,tag=xlib.internal.clone_new,limit=1] mount @s
+execute on vehicle on passengers run tag @s[type=minecraft:wandering_trader] remove xlib.internal.clone_new
+
 #==<Pass Owner UUID>==#
 
 # set aoe origin
 execute on vehicle run tp @s ~ ~ ~ ~ ~
 execute on vehicle run data modify entity @s Owner set from storage xylo_library:op clone_data.player_uuid
 # set player hex uuid on marker
-execute on vehicle on passengers if entity @s[type=minecraft:marker] run data modify entity @s data.xylo_library.clone.owner_uuid set from storage xylo_library:op clone_data.player_hex_uuid
+execute on vehicle on passengers if entity @s[type=minecraft:marker] run data modify entity @s data.xylo_library.clone.player_hex_uuid set from storage xylo_library:op clone_data.player_hex_uuid 
 
 #==<Get Pointers>==#
 
 # get marker hex uuid
 execute on vehicle on passengers if entity @s[type=minecraft:marker] run function xylo_library:utilities/uuid/generate
-data modify storage xylo_library:op clone_data.uuid set from storage gu:main out
-execute on vehicle on passengers if entity @s[type=minecraft:marker] run data modify entity @s data.xylo_library.clone.marker_uuid set from storage xylo_library:op clone_data.uuid
+data modify storage xylo_library:op clone_data.marker_hex_uuid set from storage gu:main out
+execute on vehicle on passengers if entity @s[type=minecraft:marker] run data modify entity @s data.xylo_library.clone.marker_hex_uuid set from storage xylo_library:op clone_data.marker_hex_uuid
 
 # get hitbox hex uuid
 execute on vehicle on passengers if entity @s[tag=xlib.internal.clone.hitbox] run function xylo_library:utilities/uuid/generate
-data modify storage xylo_library:op clone_data.hitbox_uuid set from storage gu:main out
+data modify storage xylo_library:op clone_data.hitbox_hex_uuid set from storage gu:main out
 
 #==<Set Entities Data>==#
 

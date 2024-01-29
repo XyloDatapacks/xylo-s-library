@@ -46,6 +46,7 @@ execute store result score #xlib.internal.clone.generate.duration xlib.op run da
 scoreboard players operation #xlib.internal.clone.generate.end_time xlib.op = #xlib.time xlib.op
 scoreboard players operation #xlib.internal.clone.generate.end_time xlib.op += #xlib.internal.clone.generate.duration xlib.op 
 execute on vehicle on passengers if entity @s[type=minecraft:marker] run scoreboard players operation @s xlib.internal.clone.generate.end_time = #xlib.internal.clone.generate.end_time xlib.op
+execute on vehicle on passengers if entity @s[type=minecraft:marker] run scoreboard players operation @s xlib.internal.clone.generate.start_time = #xlib.time xlib.op
 
 # import player data to entity
 execute on vehicle on passengers if entity @s[tag=xlib.internal.clone.hitbox] run function xylo_library:internal/clone/import/start

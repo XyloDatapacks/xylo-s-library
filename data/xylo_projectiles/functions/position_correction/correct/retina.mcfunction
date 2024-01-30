@@ -10,6 +10,7 @@ data modify storage xylo_projectiles:op corrected_pos set from storage xylo_reti
 
 
 # get hit entity uuid (except if blocked)
+data remove storage xylo_projectiles:op entity_hit
 execute store success score xproj.position_correction.hit_entity xproj.op if data storage xylo_retina:output {Target:"ENTITY"} 
 execute as @a[scores={xitm.shield_using=1},tag=retina.target,limit=1] facing entity @s eyes positioned as @s positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^1 if entity @s[distance=..1.35] run scoreboard players set xproj.position_correction.hit_entity xproj.op 0
 execute if score xproj.position_correction.hit_entity xproj.op matches 1 run data modify storage gu:main in set from storage xylo_retina:output TargetedEntity.UUID

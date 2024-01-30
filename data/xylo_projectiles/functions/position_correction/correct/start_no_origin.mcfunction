@@ -27,7 +27,7 @@ execute positioned ~ ~-0.24 ~ positioned ^ ^ ^-1 run function xylo_projectiles:p
 execute if score xproj.position_correction.has_result xproj.op matches 1 run data modify entity @s Pos set from storage xylo_projectiles:op corrected_pos
 execute at @s run tp @s ^ ^ ^0.00001
 
-
+#function xylo_projectiles:position_correction/correct/debug with storage xylo_projectiles:op entity_hit
 # execute at @s run summon minecraft:armor_stand ^ ^ ^ {Marker:1b}
 # execute if score xproj.position_correction.hit_entity xproj.op matches 1 run say hit
 # execute if score xproj.position_correction.hit_entity xproj.op matches 0 run say missed

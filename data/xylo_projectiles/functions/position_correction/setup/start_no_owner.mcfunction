@@ -1,6 +1,7 @@
 # in: "xylo_projectiles:op projectile_correction_setup{motion}"
 # context: rotated in motion direction as projectile correction entity
 # either Owner already set or marker entity as passenger with hex_uuid in "data.xylo_projectiles.position_correction.shooter"
+# as display
 
 tp @s ~ ~ ~ ~ ~
 

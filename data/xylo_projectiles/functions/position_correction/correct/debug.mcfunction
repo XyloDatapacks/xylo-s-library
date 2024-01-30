@@ -1,0 +1,1 @@
+$execute as $(uuid) run say hi

@@ -109,6 +109,9 @@ execute unless entity 545ec994-ae69-485d-9604-981ce1612a99 run summon minecraft:
 # revoke advancements
 advancement revoke @a from xylo_library:revoke
 
+# shulker
+setblock 29999999 0 12341232 minecraft:yellow_shulker_box
+
 # load
 function xylo_items:load
 function xylo_projectiles:load

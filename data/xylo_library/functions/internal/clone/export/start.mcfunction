@@ -14,7 +14,7 @@ scoreboard players operation #xlib.internal.clone.export.invis_time xlib.op > #0
 execute if score #xlib.internal.clone.export.invis_time xlib.op matches 1.. store result storage xylo_library:op clone_output_data.active_effects[{id:"minecraft:invisibility"}].duration int 1 run scoreboard players get #xlib.internal.clone.export.invis_time xlib.op
 execute unless score #xlib.internal.clone.export.invis_time xlib.op matches 1.. run data remove storage xylo_library:op clone_output_data.active_effects[{id:"minecraft:invisibility"}]
 
-#==<Get Equipment>==#
+#==<Get Armor>==#
 # TODO: update equipment in storage
 
 #==<Get Health>==#

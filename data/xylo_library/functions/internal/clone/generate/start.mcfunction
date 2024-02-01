@@ -1,3 +1,4 @@
+# <@> player
 # in: "xylo_library:op clone_input_data"
 #   duration: sets a scoreboard to the time time the clone should be killed at
 #   aoe.tags: tags to add to aoe
@@ -5,8 +6,13 @@
 #   marker.data: data to merge with marker data
 #   hitbox.tags: tags to add to hitbox entity
 
+#   active_effects: effects to give to hitbox
+#   armor: armor to give to hitbox
+#   attributes: attributes to give to hitbox
+#   health: health of hitbox
+
 # out: "xylo_library:op clone_owner_hex_uuid"
-# out: "xylo_library:op clone_data"
+# out: "xylo_library:op clone_data" (data saved in player's clone storage)
 
 ride @s dismount
 data remove storage xylo_library:op clone_data

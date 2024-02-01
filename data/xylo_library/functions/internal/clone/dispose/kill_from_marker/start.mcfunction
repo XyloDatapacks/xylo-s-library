@@ -1,6 +1,11 @@
 # <@> marker
 
-# out: "xylo_library:op clone_data"
+# out: "xylo_library:op clone_output_data"
+#   clone: data from player's clone storage
+
+#   active_effects: effects to give to hitbox
+#   armor: armor to give to hitbox
+#   health: health of hitbox
 
 
 # remove clone data from player storage

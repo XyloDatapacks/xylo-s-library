@@ -96,6 +96,7 @@ scoreboard objectives add xlib.player.double_sneak_time dummy
 # clone
 scoreboard objectives add xlib.internal.clone.generate.end_time dummy
 scoreboard objectives add xlib.internal.clone.generate.start_time dummy
+scoreboard objectives add xlib.internal.clone.import.invis_time dummy
 
 #==<Other Inits>==#
 

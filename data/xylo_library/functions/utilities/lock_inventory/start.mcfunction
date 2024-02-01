@@ -1,1 +1,40 @@
-clear @s
+item replace entity @s inventory.0 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.1 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.2 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.3 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.4 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.5 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.6 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.7 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.8 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.9 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.10 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.11 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.12 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.13 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.14 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.15 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.16 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.17 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.18 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.19 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.20 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.21 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.22 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.23 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.24 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.25 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s inventory.26 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+
+item replace entity @s hotbar.0 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.1 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.2 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.3 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.4 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.5 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.6 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.7 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s hotbar.8 with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+
+item replace entity @s weapon.offhand with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"translate":"generic.xylo_library.do_not_drop","color":"red"}'}}
+item replace entity @s weapon.mainhand with minecraft:paper{xylo_library:{kill_if_dropped:1b},CustomModelData:12340000,display:{Name:'{"text":""}',Lore:['{"translate":"generic.xylo_library.do_not_drop","color":"red"}']}}

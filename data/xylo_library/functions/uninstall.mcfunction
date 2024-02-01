@@ -34,6 +34,7 @@ scoreboard objectives remove xlib.player.double_sneak_time
 # clone
 scoreboard objectives remove xlib.internal.clone.generate.end_time
 scoreboard objectives remove xlib.internal.clone.generate.start_time
+scoreboard objectives remove xlib.internal.clone.import.invis_time
 
 #==<Other Inits>==#
 

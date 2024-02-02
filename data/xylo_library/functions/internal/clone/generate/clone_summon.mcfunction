@@ -10,7 +10,7 @@ $summon minecraft:area_effect_cloud ~ ~-0.55 ~ {Rotation:[$(yawn)f,$(pitch)f],Du
 {id:"minecraft:item_display",Rotation:[$(yawn)f,0.0f],item:{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"$(name)",CustomModelData:6}},Tags:["smithed.entity","smithed.strict","xlib.internal.clone","leg_l"],item_display:"thirdperson_righthand",view_range:0.6f,transformation:{translation:[0.0f,-5121.175f,0.0f],left_rotation:{angle:3.141590,axis:[0.0f,1.0f,0.0f]},scale:[1.1f,1.1f,1.1f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}\
 ]}]}
 
-execute positioned ~ ~-0.55 ~ run summon minecraft:wandering_trader ~ ~10000 ~ {Tags:["smithed.entity","smithed.strict","xlib.internal.clone","xlib.internal.clone.hitbox",xlib.internal.clone_new],NoAI:1b,Silent:1b,Offers:{},active_effects:[{id:"minecraft:invisibility",duration:-1,amplifier:100b,show_particles:0b}]}
+execute positioned ~ ~-0.55 ~ run summon minecraft:wandering_trader ~ ~10000 ~ {Tags:["smithed.entity","smithed.strict","xlib.internal.clone","xlib.internal.clone.hitbox",xlib.internal.clone_new],NoAI:1b,Silent:1b,ArmorDropChances:[0.0f,0.0f,0.0f],Offers:{},active_effects:[{id:"minecraft:invisibility",duration:-1,amplifier:100b,show_particles:0b}]}
 
 # set data
 tag @s add xlib.internal.clone.player

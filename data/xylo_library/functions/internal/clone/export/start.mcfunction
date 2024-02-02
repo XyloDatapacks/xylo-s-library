@@ -5,7 +5,7 @@
 # gets data from the hitbox entity and updates storage
 
 #==<Get Effects>==#
-data modify storage xylo_library:op clone_output_data.active_effects append from entity @s active_effects[]
+data modify storage xylo_library:op clone_output_data.active_effects set from entity @s active_effects
 # fix invis time
 execute on vehicle on passengers if entity @s[type=minecraft:marker,tag=xlib.internal.clone] run scoreboard players operation #xlib.internal.clone.export.invis_time xlib.op = @s xlib.internal.clone.generate.start_time
 scoreboard players operation #xlib.internal.clone.export.invis_time xlib.op -= #xlib.time xlib.op

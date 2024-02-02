@@ -31,12 +31,25 @@ scoreboard players operation #xlib.timer.4sec xlib.op %= #80 xconst
 scoreboard players operation #xlib.timer.5sec xlib.op = #xlib.time xlib.op
 scoreboard players operation #xlib.timer.5sec xlib.op %= #100 xconst
 
+#==<Pre Tick>==#
+
 # pre tick
 function xylo_items:pre_tick
 
-# tick
+#==<Player Tick>==#
 execute as @a run function xylo_library:player_tick
+
+#==<Tick>==#
+
+# internal functions
+execute as @e[type=minecraft:marker,tag=xlib.internal.clone] run function xylo_library:internal/clone/tick
+
+# libraries
 function xylo_items:tick
 function xylo_projectiles:tick
+# other packs
 function #xylo_library:tick
 
+
+# kill gui items
+kill @e[type=minecraft:item,nbt={Item:{tag:{xylo_library:{kill_if_dropped:1b}}}}]

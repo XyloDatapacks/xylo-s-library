@@ -11,6 +11,7 @@ execute store result score @s xlib.internal.clone.import.invis_time run data get
 execute if data storage xylo_library:op clone_input_data.active_effects[{id:"minecraft:invisibility"}] run data modify storage xylo_library:op clone_input_data.active_effects[{id:"minecraft:invisibility"}].duration set value -1
 # apply
 data modify entity @s active_effects set from storage xylo_library:op clone_input_data.active_effects
+effect clear @s minecraft:glowing
 
 #==<Set Armor>==#
 # TODO: to be replaced with actual solution which uses data from storage

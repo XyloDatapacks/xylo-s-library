@@ -38,6 +38,9 @@ scoreboard objectives remove xlib.internal.clone.import.invis_time
 
 #==<Other Inits>==#
 
+# teams
+team remove xlib.no_collision
+
 # functions
 kill 0000000d-0109-0097-0116-000000000104 
 

@@ -100,6 +100,10 @@ scoreboard objectives add xlib.internal.clone.import.invis_time dummy
 
 #==<Other Inits>==#
 
+# teams 
+team add xlib.no_collision "xlib.no_collision"
+team modify xlib.no_collision collisionRule never
+
 # functions
 function xylo_library:utilities/uuid/load
 

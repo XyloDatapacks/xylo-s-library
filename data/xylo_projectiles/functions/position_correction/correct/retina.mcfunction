@@ -1,3 +1,6 @@
+#MaxRecursionDepth:50,TargetEntities:true,OverrideExecutingEntity:true,ExpandEntityHitboxes:0.3
+# xylo_retina:traverse
+
 data merge storage xylo_retina:input {HorizontalCount:1b,VerticalCount:1b,CenteredCount:0b,SpreadFactor:[100,100],EndpointEntity:0b,MaxRecursionDepth:50,TargetEntities:true,OverrideExecutingEntity:true,ExpandEntityHitboxes:0.3}
 execute store result storage xylo_retina:input MaxRecursionDepth int 0.001 run scoreboard players get xproj.position_correction.max_distance xproj.op
 function xylo_retina:traverse/setup_no_entity

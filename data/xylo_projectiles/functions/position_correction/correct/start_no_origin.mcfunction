@@ -23,7 +23,7 @@ execute unless score @s xproj.position_correction.creation_time <= #xlib.time xl
 
 # change position (loop return "xproj.position_correction.max_distance xproj.op" = {0: if found bock/entity}, {-1: no found})
 scoreboard players set xproj.position_correction.hit_entity xproj.op 0
-execute positioned ~ ~-0.24 ~ positioned ^ ^ ^-1 run function xylo_projectiles:position_correction/correct/retina
+execute positioned ~ ~-0.24 ~ positioned ^ ^ ^-1 run function xylo_projectiles:position_correction/correct/raycast
 execute if score xproj.position_correction.has_result xproj.op matches 1 run data modify entity @s Pos set from storage xylo_projectiles:op corrected_pos
 execute at @s run tp @s ^ ^ ^0.00001
 

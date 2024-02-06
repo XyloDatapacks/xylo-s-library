@@ -31,6 +31,9 @@ scoreboard objectives remove xlib.player.sneaking
 scoreboard objectives remove xlib.player.double_sneak 
 scoreboard objectives remove xlib.player.double_sneak_time
 
+# utilities
+scoreboard objectives add xlib.utilities.un_agro.reset_time dummy
+
 # clone
 scoreboard objectives remove xlib.internal.clone.generate.end_time
 scoreboard objectives remove xlib.internal.clone.generate.start_time

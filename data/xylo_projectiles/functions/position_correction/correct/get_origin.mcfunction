@@ -1,3 +1,3 @@
 # -> {shooter}
 
-$execute as $(shooter) run tag @s add retina.executing
+$execute as $(shooter) run tag @s add iris.executing

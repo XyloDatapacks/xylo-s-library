@@ -93,6 +93,9 @@ scoreboard objectives add xlib.player.sneaking dummy
 scoreboard objectives add xlib.player.double_sneak dummy
 scoreboard objectives add xlib.player.double_sneak_time dummy
 
+# utilities
+scoreboard objectives add xlib.utilities.un_agro.reset_time dummy
+
 # clone
 scoreboard objectives add xlib.internal.clone.generate.end_time dummy
 scoreboard objectives add xlib.internal.clone.generate.start_time dummy

@@ -18,7 +18,7 @@ scoreboard players operation xproj.position_correction.max_distance xproj.op > #
 
 # get origin
 execute if score @s xproj.position_correction.creation_time = @s xproj.position_correction.creation_time run scoreboard players add @s xproj.position_correction.creation_time 2
-execute unless score @s xproj.position_correction.creation_time <= #xlib.time xlib.op on origin run tag @s add retina.executing
+execute unless score @s xproj.position_correction.creation_time <= #xlib.time xlib.op on origin run tag @s add iris.executing
 
 
 # change position (loop return "xproj.position_correction.max_distance xproj.op" = {0: if found bock/entity}, {-1: no found})

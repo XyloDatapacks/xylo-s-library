@@ -1,5 +1,4 @@
-# TODO: ExpandEntityHitboxes:0.3
-data merge storage iris:settings {MaxRecursionDepth:50,OverrideExecutingEntity:1b,TargetEntities:1b,Blacklist:"#iris:shape_groups/air"}
+data merge storage iris:settings {MaxRecursionDepth:50,OverrideExecutingEntity:1b,TargetEntities:1b,Blacklist:"#iris:shape_groups/air",EntityHitboxTollerance:0.3}
 execute store result storage iris:settings MaxDistance int 0.001 run scoreboard players get xproj.position_correction.max_distance xproj.op
 data remove storage iris:settings Whitelist
 function iris:get_target

@@ -1,1 +1,0 @@
-execute align xyz positioned ~-1 ~-1 ~-1 as @e[type=!#xylo_retina:intangible,tag=!retina.ignore,tag=!retina.executing,dx=2,dy=2,dz=2] at @s run function xylo_retina:check/entity/get_hitbox

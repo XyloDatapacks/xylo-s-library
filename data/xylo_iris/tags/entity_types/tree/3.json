@@ -1,0 +1,14 @@
+{
+    "values": [
+        "minecraft:pufferfish",
+        "#xylo_iris:player_like",
+        "minecraft:polar_bear",
+        "minecraft:rabbit",
+        "minecraft:ravager",
+        "minecraft:salmon",
+        "#xylo_iris:sheep_like",
+        "minecraft:shulker",
+        "minecraft:skeleton",
+        "#xylo_iris:slime_like"
+    ]
+}

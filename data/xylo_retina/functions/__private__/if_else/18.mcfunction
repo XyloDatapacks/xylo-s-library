@@ -1,6 +1,0 @@
-data modify storage xylo_retina:data Surfaces.Top append value [0,300,180,120,300,300]
-data modify storage xylo_retina:data Surfaces.Bottom append value [0,120,180,120,120,300]
-data modify storage xylo_retina:data Surfaces.West append value [0,120,180,0,300,300]
-data modify storage xylo_retina:data Surfaces.East append value [120,120,180,120,300,300]
-data modify storage xylo_retina:data Surfaces.North append value [0,120,180,120,300,180]
-data modify storage xylo_retina:data Surfaces.South append value [0,120,300,120,300,300]

@@ -1,3 +1,3 @@
 # -> {shooter}
 
-$execute as $(shooter) run tag @s add iris.executing
+$execute as $(shooter) run tag @s add xylo_iris.executing

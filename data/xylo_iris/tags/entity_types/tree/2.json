@@ -1,0 +1,14 @@
+{
+    "values": [
+        "minecraft:guardian",
+        "#xylo_iris:hoglins",
+        "#xylo_iris:horses",
+        "minecraft:iron_golem",
+        "minecraft:leash_knot",
+        "#xylo_iris:llamas",
+        "#xylo_iris:minecarts",
+        "minecraft:panda",
+        "minecraft:phantom",
+        "minecraft:pig"
+    ]
+}

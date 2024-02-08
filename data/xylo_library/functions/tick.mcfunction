@@ -53,7 +53,7 @@ function #xylo_library:tick
 #==<Post Tick>==#
 
 # pre tick
-function xylo_library:internal/gui/post_tick
+execute as @a[scores={xlib.internal.gui.priority=0..}] run function xylo_library:internal/gui/post_tick
 
 # kill gui items
 kill @e[type=minecraft:item,nbt={Item:{tag:{xylo_library:{kill_if_dropped:1b}}}}]

@@ -39,6 +39,9 @@ scoreboard objectives remove xlib.internal.clone.generate.end_time
 scoreboard objectives remove xlib.internal.clone.generate.start_time
 scoreboard objectives remove xlib.internal.clone.import.invis_time
 
+# gui
+scoreboard objectives add xlib.internal.gui.priority dummy
+
 #==<Other Inits>==#
 
 # teams

@@ -101,13 +101,19 @@ scoreboard objectives add xlib.internal.clone.generate.end_time dummy
 scoreboard objectives add xlib.internal.clone.generate.start_time dummy
 scoreboard objectives add xlib.internal.clone.import.invis_time dummy
 
+# gui
+scoreboard objectives add xlib.internal.gui.priority dummy
+
 #==<Other Inits>==#
 
 # teams 
 team add xlib.no_collision "xlib.no_collision"
 team modify xlib.no_collision collisionRule never
 
-# functions
+# internal load
+function xylo_library:internal/gui/generate/load
+
+# utilities load
 function xylo_library:utilities/uuid/load
 
 # distance calc (UUID: 0000000d-0109-0097-0116-000000000104)

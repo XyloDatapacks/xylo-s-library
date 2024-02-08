@@ -7,6 +7,7 @@
 #	storage xylo_iris:data Shape: compound[]
 #       A list of cuboids given by two corners in the format {min: [x, y, z], max: [x, y z]}
 
+# Get entity dimensions
 scoreboard players set $entity_found xylo_iris 0
 execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:tree/0] run function xylo_iris:get_hitbox/entity/tree/0
 execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:tree/1] run function xylo_iris:get_hitbox/entity/tree/1
@@ -14,6 +15,9 @@ execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:
 execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:tree/3] run function xylo_iris:get_hitbox/entity/tree/3
 execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:tree/4] run function xylo_iris:get_hitbox/entity/tree/4
 execute if score $entity_found xylo_iris matches 0 if entity @s[type=#xylo_iris:tree/5] run function xylo_iris:get_hitbox/entity/tree/5
+
+# Scale
+function xylo_iris:get_hitbox/entity/scale
 
 # Get the entity's coordinates
 scoreboard players operation $entity_[x] xylo_iris = $[x] xylo_iris

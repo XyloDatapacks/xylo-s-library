@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "vehicle": {}
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "vehicle": {
+          "type": "minecraft:arrow",
+          "nbt": "{inGround:1b}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "vehicle": {
+          "type": "minecraft:trident",
+          "nbt": "{DealtDamage:1b}"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "vehicle": {
+          "type": "minecraft:trident",
+          "nbt": "{inGround:1b}"
+        }
+      }
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+# <@> item display
+
 # in: "xylo_projectiles:op projectile_correction_setup{shooter, motion}"
 # context: rotated in motion direction as projectile correction entity
 
@@ -9,4 +11,6 @@ execute store result score @s xproj.position_correction.motion_x run data get st
 execute store result score @s xproj.position_correction.motion_y run data get storage xylo_projectiles:op projectile_correction_setup.motion[1] 10000
 execute store result score @s xproj.position_correction.motion_z run data get storage xylo_projectiles:op projectile_correction_setup.motion[2] 10000
 
-data modify entity @s Owner set from storage xylo_projectiles:op projectile_correction_setup.shooter
+execute on passengers run data modify entity @s[type=minecraft:area_effect_cloud,tag=xproj.position_correction] Owner set from storage xylo_projectiles:op projectile_correction_setup.shooter
+
+tag @s add xproj.position_correction.with_aoe

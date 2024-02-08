@@ -5,6 +5,7 @@ execute store result storage xvc_version:op packs[-1].index int 1 run scoreboard
 
 # required packs
 data modify storage xvc_version:op packs[-1].required append value {namespace:"xylo_library",version:10000}
+data modify storage xvc_version:op packs[-1].required append value {namespace:"xylo_projectiles",version:10000}
 
 # supported packs
 data modify storage xvc_version:op packs[-1].supported append value {namespace:"energy_manipulation",version:10000}

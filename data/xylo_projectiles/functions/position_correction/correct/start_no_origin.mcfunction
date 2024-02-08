@@ -1,4 +1,4 @@
-# <@> entity with marker passenger
+# <@> item display with marker passenger
 # execute as proj correction entity at @s
 # motion vector stored in proj correction sb *10'000
 # sb "xproj.position_correction.creation_time" init for @s
@@ -18,7 +18,7 @@ scoreboard players operation xproj.position_correction.max_distance xproj.op > #
 
 # get origin
 execute if score @s xproj.position_correction.creation_time = @s xproj.position_correction.creation_time run scoreboard players add @s xproj.position_correction.creation_time 4
-execute unless score @s xproj.position_correction.creation_time <= #xlib.time xlib.op on passengers if entity @s[tag=xproj.position_correction] run function xylo_projectiles:position_correction/correct/get_origin with entity @s data.xylo_projectiles.position_correction
+execute unless score @s xproj.position_correction.creation_time <= #xlib.time xlib.op on passengers if entity @s[type=minecraft:marker,tag=xproj.position_correction] run function xylo_projectiles:position_correction/correct/get_origin with entity @s data.xylo_projectiles.position_correction
 
 
 # change position (loop return "xproj.position_correction.max_distance xproj.op" = {0: if found bock/entity}, {-1: no found})
@@ -26,6 +26,10 @@ scoreboard players set xproj.position_correction.hit_entity xproj.op 0
 execute positioned ~ ~-0.24 ~ positioned ^ ^ ^-1 run function xylo_projectiles:position_correction/correct/raycast
 execute if score xproj.position_correction.has_result xproj.op matches 1 run data modify entity @s Pos set from storage xylo_projectiles:op corrected_pos
 execute at @s run tp @s ^ ^ ^0.00001
+
+# callback
+execute at @s on passengers if entity @s[type=minecraft:marker,tag=xproj.position_correction] run function xylo_projectiles:position_correction/correct/callback with entity @s data.xylo_projectiles.position_correction
+
 
 #function xylo_projectiles:position_correction/correct/debug with storage xylo_projectiles:op entity_hit
 # execute at @s run summon minecraft:armor_stand ^ ^ ^ {Marker:1b}

@@ -1,16 +1,19 @@
 # "xylo_items:op thrown_item" -> tag.xylo_items.throw
 #   power: the absolute value of the motion
-#   correct_landing: true/false to apply projectile correction or not
 #   NoGravity: true/false to disable gravity or not
 #
 #   proj_tags: list of tags to add to display entity
 #   transformation: transformation to apply to display entity
 #   item_display: how the item is displayed (fixed, head, ...)
 #
+#   correct_landing: true/false to apply projectile correction or not
+#   hit_callback: function run on projectile correction
+#   damage: set damage score. for automated damage: {damage:<dmg>,correct_landing:1b,hit_callback:"xylo_items:item_class/throwable/damage/callback"}
+#
 #   passenger: {id: .. , data:{...} }
 #       id: id of the passenger entity
 #       data: compound with entity data
-#   function: function to run as the display entity at the projectile position
+#   throw_callback: function to run as the display entity at the projectile position
 
 
 # in: "xylo_items:op thrown_item"
@@ -38,6 +41,6 @@ data modify storage xylo_items:op macro_data.shooter set from storage gu:main ou
 data modify storage xylo_items:op macro_data merge from storage xylo_items:op thrown_data.offset
 
 # summon and apply data
-execute store result score #xitm.item_class.throwable.throw.correction xitm.op if data storage xylo_items:op thrown_data.correct_landing
+execute store success score #xitm.item_class.throwable.throw.correction xitm.op if data storage xylo_items:op thrown_data{correct_landing:1b}
 execute if score #xitm.item_class.throwable.throw.correction xitm.op matches 1 run function xylo_items:item_class/throwable/throw/summon with storage xylo_items:op macro_data
 execute if score #xitm.item_class.throwable.throw.correction xitm.op matches 0 run function xylo_items:item_class/throwable/throw/summon_no_correction with storage xylo_items:op macro_data

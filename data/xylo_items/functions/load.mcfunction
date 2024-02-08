@@ -16,6 +16,9 @@ scoreboard objectives add xitm.track_item.is_tracking dummy
 scoreboard objectives add xitm.track_item.double_swap_time dummy
 scoreboard objectives add xitm.shield_using dummy
 
+# item class
+scoreboard objectives add xitm.item_class.throwable.damage dummy
+
 #storages
 data remove storage xylo_items:op register_item_selected_slot
 

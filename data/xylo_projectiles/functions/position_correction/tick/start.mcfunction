@@ -1,3 +1,5 @@
+# <@> item display
+
 # in: "xylo_projectiles:op projectile_correction_tick{motion}"
 # context: as projectile correction entity (passenger of the projectile)
 

@@ -11,3 +11,8 @@ scoreboard objectives remove xitm.track_item.skip_track
 scoreboard objectives remove xitm.track_item.is_tracking 
 scoreboard objectives remove xitm.track_item.double_swap_time 
 scoreboard objectives remove xitm.shield_using 
+
+# item class
+scoreboard objectives add xitm.item_class.throwable.damage dummy
+
+

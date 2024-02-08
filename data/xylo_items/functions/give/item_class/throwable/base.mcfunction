@@ -1,1 +1,1 @@
-give @s minecraft:warped_fungus_on_a_stick{xylo_items:{item_class:"throwable",throw:{power:1,correct_landing:1b,proj_tags:["test"]}}}
+give @s minecraft:warped_fungus_on_a_stick{xylo_items:{item_class:"throwable",throw:{power:1,correct_landing:1b,damage:30,hit_callback:"xylo_items:item_class/throwable/damage/callback",proj_tags:["test"]}}}

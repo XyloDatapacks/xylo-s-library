@@ -33,6 +33,9 @@ scoreboard players operation #xlib.timer.5sec xlib.op %= #100 xconst
 
 #==<Pre Tick>==#
 
+# check entities exist
+function xylo_library:fixed_uuid_entities_summon
+
 # pre tick
 function xylo_items:pre_tick
 

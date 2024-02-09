@@ -44,7 +44,7 @@ forceload add 0 0
 
 #MARKERS
 kill d59ee2c6-58c8-4885-b9db-ecff066e4439
-summon marker ~ ~ ~ {UUID: [I;-711007546,1489520773,-1176769281,107889721],Tags:["global.ignore"]}
+execute unless entity d59ee2c6-58c8-4885-b9db-ecff066e4439 run summon marker ~ ~ ~ {UUID: [I;-711007546,1489520773,-1176769281,107889721],Tags:["global.ignore"]}
 
 #STORAGE 
 data modify storage delta:macros rotation set value {"positive":0,"negative":0}

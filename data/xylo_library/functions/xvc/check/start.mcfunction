@@ -13,7 +13,7 @@ function xylo_projectiles:xvc/load
 function xylo_items:xvc/load
 
 #indentation for debug
-data remove storage xvc_version:op indentation
+data modify storage xvc_version:op indentation set value [""]
 
 #for each pack execute the check
 data modify storage xvc_version:op macro_data set value {function:"xylo_library:xvc/check/check_pack",data:{}}

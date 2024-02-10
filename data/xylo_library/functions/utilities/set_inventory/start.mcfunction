@@ -87,15 +87,15 @@ data modify storage xylo_library:op set_inventory.offhand[{Slot:-106b}].Slot set
 
 
 # give items
-data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.hotbar
-loot replace entity @s hotbar.0 mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
+execute in minecraft:overworld run data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.hotbar
+execute in minecraft:overworld run loot replace entity @s hotbar.0 mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
 
-data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.inventory
-loot replace entity @s inventory.0 mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
+execute in minecraft:overworld run data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.inventory
+execute in minecraft:overworld run loot replace entity @s inventory.0 mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
 
-data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.armor
-loot replace entity @s armor.feet mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
+execute in minecraft:overworld run data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.armor
+execute in minecraft:overworld run loot replace entity @s armor.feet mine 29999999 0 12341232 minecraft:air{drop_contents: 1b}
 
-data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.offhand
-item replace entity @s weapon.offhand from block 29999999 0 12341232 container.0
+execute in minecraft:overworld run data modify block 29999999 0 12341232 Items set from storage xylo_library:op set_inventory.offhand
+execute in minecraft:overworld run item replace entity @s weapon.offhand from block 29999999 0 12341232 container.0
 

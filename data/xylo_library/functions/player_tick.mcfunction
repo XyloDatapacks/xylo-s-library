@@ -1,6 +1,12 @@
+# UPDATE VERSION
+execute unless score @s xlib.player_version = #xlib.pack_version xlib.op run function xylo_library:player_init
+
 #==<Player Data>==#
 data modify storage xylo_library:op player_data set from entity @s {}
+
+scoreboard players operation @s xlib.player.selected_slot_old = @s xlib.player.selected_slot
 execute store result score @s xlib.player.selected_slot run data get storage xylo_library:op player_data.SelectedItemSlot
+execute store success score @s xlib.player.selected_slot_changed unless score @s xlib.player.selected_slot = @s xlib.player.selected_slot_old
 
 execute store result score @s xlib.player.rotation_x run data get storage xylo_library:op player_data.Rotation[0] 100
 execute store result score @s xlib.player.rotation_y run data get storage xylo_library:op player_data.Rotation[1] 100
@@ -13,10 +19,14 @@ execute store result score @s xlib.player.on_ground run data get storage xylo_li
 
 #==<Action Detection>==#
 
+# inventory changed
+execute store success score @s xlib.player.inventory_changed run advancement revoke @s only xylo_library:player/inventory_changed
+
 # death and respawn
+execute store result score @s xlib.player.health_nbt run data get storage xylo_library:op player_data.Health 100
 execute store success score @s xlib.player.died run scoreboard players reset @s[scores={xlib.player._died=1..}] xlib.player._died
 scoreboard players set @s[scores={xlib.player.reapawn_status=1}] xlib.player.reapawn_status 0
-scoreboard players set @s[scores={xlib.player.reapawn_status=-1,xlib.player.health_obj=1..}] xlib.player.reapawn_status 1
+scoreboard players set @s[scores={xlib.player.reapawn_status=-1,xlib.player.health_nbt=1..}] xlib.player.reapawn_status 1
 execute if score @s xlib.player.died matches 1 run scoreboard players set @s xlib.player.reapawn_status -1
 
 # jump

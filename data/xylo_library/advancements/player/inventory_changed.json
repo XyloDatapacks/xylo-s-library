@@ -1,0 +1,8 @@
+{
+  "parent": "xylo_library:revoke",
+  "criteria": {
+    "generic_change": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  }
+}

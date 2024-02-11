@@ -1,6 +1,9 @@
 # op
 scoreboard objectives remove xlib.op 
 scoreboard objectives remove xlib.test 
+# version
+scoreboard objectives remove xlib.player_version 
+
 # const
 scoreboard objectives remove xconst 
 
@@ -30,6 +33,9 @@ scoreboard objectives remove xlib.player.sneak_time
 scoreboard objectives remove xlib.player.sneaking 
 scoreboard objectives remove xlib.player.double_sneak 
 scoreboard objectives remove xlib.player.double_sneak_time
+scoreboard objectives remove xlib.player.inventory_changed
+scoreboard objectives remove xlib.player.selected_slot_old
+scoreboard objectives remove xlib.player.selected_slot_changed
 
 # utilities
 scoreboard objectives add xlib.utilities.un_agro.reset_time dummy

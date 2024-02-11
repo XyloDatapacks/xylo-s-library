@@ -5,13 +5,16 @@ schedule clear xylo_library:load_check
 function xylo_library:xvc/start
 execute if score $xylo_library xvc.load_status matches 0 run return 0
 scoreboard players set $xylo_library xvc.load_status 1
-
 # Reset scoreboards so packs can set values accurate for current load.
 scoreboard players set xlib.xylo load.status 1
 
 # op
 scoreboard objectives add xlib.op dummy
 scoreboard objectives add xlib.test dummy
+# version
+execute store result score #xlib.pack_version xlib.op run data get storage xvc_version:op packs[{namespace:"xylo_library"}].version
+scoreboard objectives add xlib.player_version dummy
+
 # const
 scoreboard objectives add xconst dummy
 scoreboard players set #-1000 xconst -1000
@@ -71,6 +74,7 @@ scoreboard players set #100000 xconst 100000
 # player
 scoreboard objectives add xlib.player.selected_slot dummy
 scoreboard objectives add xlib.player.health_obj health
+scoreboard objectives add xlib.player.health_nbt dummy
 scoreboard objectives add xlib.player._died minecraft.custom:minecraft.deaths
 scoreboard objectives add xlib.player.died dummy
 scoreboard objectives add xlib.player.reapawn_status dummy
@@ -92,6 +96,9 @@ scoreboard objectives add xlib.player.sneak_time minecraft.custom:minecraft.snea
 scoreboard objectives add xlib.player.sneaking dummy
 scoreboard objectives add xlib.player.double_sneak dummy
 scoreboard objectives add xlib.player.double_sneak_time dummy
+scoreboard objectives add xlib.player.inventory_changed dummy
+scoreboard objectives add xlib.player.selected_slot_old dummy
+scoreboard objectives add xlib.player.selected_slot_changed dummy
 
 # utilities
 scoreboard objectives add xlib.utilities.un_agro.reset_time dummy

@@ -1,3 +1,7 @@
+#> xylo_items:item_class/throwable/throw_mh
+# @context: player in player tick  
+# @within: xylo_items:player_tick
+
 #get item
 data modify storage xylo_items:op thrown_item set from storage xylo_library:op player_data.SelectedItem
 #clear selected item slot

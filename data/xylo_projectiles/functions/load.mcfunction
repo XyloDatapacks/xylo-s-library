@@ -11,6 +11,7 @@ scoreboard objectives add xproj.position_correction.creation_time dummy
 scoreboard objectives add xproj.position_correction.motion_x dummy
 scoreboard objectives add xproj.position_correction.motion_y dummy
 scoreboard objectives add xproj.position_correction.motion_z dummy
+scoreboard objectives add xproj.position_correction.damage dummy
 
 # functions
 

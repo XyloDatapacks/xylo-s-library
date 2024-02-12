@@ -1,4 +1,6 @@
-# <@> display
+#> xylo_items:item_class/throwable/throw/summon_data
+# @context: item display passenger of the projectile (at shoot position)
+# @within: xylo_items:item_class/throwable/throw/summon
 
 #==<display data>==#
 tag @s remove xitm.item_class.throwable.display_new

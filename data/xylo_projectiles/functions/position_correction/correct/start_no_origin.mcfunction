@@ -31,6 +31,12 @@ execute at @s run tp @s ^ ^ ^0.00001
 execute at @s on passengers if entity @s[type=minecraft:marker,tag=xproj.position_correction] run function xylo_projectiles:position_correction/correct/callback with entity @s data.xylo_projectiles.position_correction
 
 
+
+
+# autokill
+execute on passengers run kill @s[tag=xproj.position_correction.auto_kill]
+kill @s[tag=xproj.position_correction.auto_kill]
+
 #function xylo_projectiles:position_correction/correct/debug with storage xylo_projectiles:op entity_hit
 # execute at @s run summon minecraft:armor_stand ^ ^ ^ {Marker:1b}
 # execute if score xproj.position_correction.hit_entity xproj.op matches 1 run say hit

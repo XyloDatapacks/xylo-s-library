@@ -27,9 +27,15 @@ execute positioned ~ ~-0.24 ~ positioned ^ ^ ^-1 run function xylo_projectiles:p
 execute if score xproj.position_correction.has_result xproj.op matches 1 run data modify entity @s Pos set from storage xylo_projectiles:op corrected_pos
 execute at @s run tp @s ^ ^ ^0.00001
 
+# damage
+data remove storage xylo_projectiles:op macro_data
+data modify storage xylo_projectiles:op macro_data.uuid set from storage xylo_projectiles:op entity_hit.uuid
+execute store result storage xylo_projectiles:op macro_data.damage double 0.001 run scoreboard players get @s xproj.position_correction.damage
+execute at @s on passengers if entity @s[type=minecraft:area_effect_cloud,tag=xproj.position_correction] run function xylo_projectiles:position_correction/damage/start with storage xylo_projectiles:op macro_data
 
-
-
+# autokill
+execute on passengers run kill @s[tag=xproj.position_correction.auto_kill]
+kill @s[tag=xproj.position_correction.auto_kill]
 
 #function xylo_projectiles:position_correction/correct/debug with storage xylo_projectiles:op entity_hit
 # execute at @s run summon minecraft:armor_stand ^ ^ ^ {Marker:1b}

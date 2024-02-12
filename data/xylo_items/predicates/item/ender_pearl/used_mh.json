@@ -3,7 +3,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "xitm.wfoas.used": 1
+      "xitm.ender_pearl.used": 1
     }
   },
   {
@@ -13,7 +13,7 @@
       "equipment": {
         "mainhand": {
           "items": [
-            "minecraft:warped_fungus_on_a_stick"
+            "minecraft:ender_pearl"
           ]
         }
       }

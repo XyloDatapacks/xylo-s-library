@@ -3,7 +3,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "xitm.wfoas.used": 1
+      "xitm.crossbow.used": 1
     }
   },
   {
@@ -11,9 +11,9 @@
     "entity": "this",
     "predicate": {
       "equipment": {
-        "mainhand": {
+        "offhand": {
           "items": [
-            "minecraft:warped_fungus_on_a_stick"
+            "minecraft:crossbow"
           ]
         }
       }

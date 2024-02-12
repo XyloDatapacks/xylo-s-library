@@ -71,6 +71,9 @@ scoreboard players set #100000 xconst 100000
 
 #==<objectives>==#
 
+# internal 
+scoreboard objectives add xlib.internal.air_toggle dummy
+
 # player
 scoreboard objectives add xlib.player.selected_slot dummy
 scoreboard objectives add xlib.player.health_obj health
@@ -86,8 +89,11 @@ scoreboard objectives add xlib.player.motion_z dummy
 scoreboard objectives add xlib.player.on_ground dummy
 scoreboard objectives add xlib.player._jump minecraft.custom:minecraft.jump
 scoreboard objectives add xlib.player.jumped dummy
-scoreboard objectives add xlib.player._dmg_dealth minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add xlib.player.dealth_damage dummy
+scoreboard objectives add xlib.player._dmg_dealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add xlib.player.dealt_damage_value dummy
+scoreboard objectives add xlib.player.dealt_damage dummy
+scoreboard objectives add xlib.player.dealt_damage_direct dummy
+scoreboard objectives add xlib.player.dealt_damage_indirect dummy
 scoreboard objectives add xlib.player._dmg_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add xlib.player.taken_damage dummy
 scoreboard objectives add xlib.player.leave_game minecraft.custom:minecraft.leave_game

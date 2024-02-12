@@ -23,8 +23,8 @@ scoreboard objectives remove xlib.player.motion_z
 scoreboard objectives remove xlib.player.on_ground
 scoreboard objectives remove xlib.player._jump 
 scoreboard objectives remove xlib.player.jumped 
-scoreboard objectives remove xlib.player._dmg_dealth 
-scoreboard objectives remove xlib.player.dealth_damage 
+scoreboard objectives remove xlib.player._dmg_dealt 
+scoreboard objectives remove xlib.player.dealt_damage 
 scoreboard objectives remove xlib.player._dmg_taken 
 scoreboard objectives remove xlib.player.taken_damage 
 scoreboard objectives remove xlib.player.leave_game

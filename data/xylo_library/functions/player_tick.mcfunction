@@ -32,8 +32,16 @@ execute if score @s xlib.player.died matches 1 run scoreboard players set @s xli
 # jump
 execute store success score @s xlib.player.jumped run scoreboard players reset @s[scores={xlib.player._jump=1..}] xlib.player._jump
 
-# damage
-execute store success score @s xlib.player.dealth_damage run scoreboard players reset @s[scores={xlib.player._dmg_dealth=1..}] xlib.player._dmg_dealth
+# damage dealt
+execute store success score @s xlib.player.dealt_damage run advancement revoke @s only xylo_library:player/damage_dealt
+scoreboard players operation @s[scores={xlib.player._dmg_dealt=1..}] xlib.player.dealt_damage_value >< @s xlib.player._dmg_dealt
+scoreboard players reset @s xlib.player._dmg_dealt
+# damage dealt direct
+execute store success score @s xlib.player.dealt_damage_direct run advancement revoke @s only xylo_library:player/damage_dealt_direct
+# damage dealt indirect
+execute store success score @s xlib.player.dealt_damage_indirect if entity @s[scores={xlib.player.dealt_damage=1,xlib.player.dealt_damage_direct=0}]
+
+# damage taken
 execute store success score @s xlib.player.taken_damage run scoreboard players reset @s[scores={xlib.player._dmg_taken=1..}] xlib.player._dmg_taken
 
 # join

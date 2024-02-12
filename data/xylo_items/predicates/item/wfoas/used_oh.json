@@ -3,7 +3,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "xitm.wfoas_used": 1
+      "xitm.wfoas.used": 1
     }
   },
   {

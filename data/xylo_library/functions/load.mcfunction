@@ -50,6 +50,7 @@ scoreboard players set #50 xconst 50
 scoreboard players set #60 xconst 60
 scoreboard players set #80 xconst 80
 scoreboard players set #90 xconst 90
+scoreboard players set #99 xconst 99
 scoreboard players set #100 xconst 100
 scoreboard players set #119 xconst 119
 scoreboard players set #150 xconst 150

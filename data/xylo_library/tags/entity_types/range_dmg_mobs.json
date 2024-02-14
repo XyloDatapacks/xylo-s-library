@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "#xylo_library:arrow_shooter",
+        "minecraft:drowned",
+        "minecraft:blaze",
+        "minecraft:ghast",
+        "minecraft:wither",
+        "minecraft:shulker"
+    ]
+}

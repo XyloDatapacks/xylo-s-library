@@ -10,3 +10,5 @@ execute store result storage xvc_version:op packs[-1].index int 1 run scoreboard
 data modify storage xvc_version:op packs[-1].supported append value {namespace:"xylo_items",version:10000}
 data modify storage xvc_version:op packs[-1].supported append value {namespace:"xylo_projectiles",version:10000}
 data modify storage xvc_version:op packs[-1].supported append value {namespace:"energy_manipulation",version:10000}
+data modify storage xvc_version:op packs[-1].supported append value {namespace:"xylo_rpg_core",version:10000}
+data modify storage xvc_version:op packs[-1].supported append value {namespace:"xylo_health_bar",version:10000}

@@ -9,4 +9,5 @@ data modify storage xvc_version:op packs[-1].required append value {namespace:"x
 
 # supported packs
 data modify storage xvc_version:op packs[-1].supported append value {namespace:"energy_manipulation",version:10000}
+data modify storage xvc_version:op packs[-1].supported append value {namespace:"xylo_rpg_core",version:10000}
 

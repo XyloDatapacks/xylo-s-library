@@ -118,6 +118,9 @@ scoreboard objectives add xlib.internal.clone.import.invis_time dummy
 # gui
 scoreboard objectives add xlib.internal.gui.priority dummy
 
+# blocks
+scoreboard objectives add xlib.internal.blocks.block_data dummy
+
 #==<Other Inits>==#
 
 # teams 
@@ -135,7 +138,8 @@ function xylo_library:utilities/uuid/load
 function xylo_library:fixed_uuid_entities_summon
 # shulker
 setblock 29999999 0 12341232 minecraft:yellow_shulker_box
-
+# command block
+setblock 29999999 0 12341233 minecraft:repeating_command_block{auto:1b,Command:"function #xylo_library:command_block_tick"} replace
 
 # revoke advancements
 advancement revoke @a from xylo_library:revoke

@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "placed_machine_block": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "nbt": "{SkullOwner:{Properties:{textures:[{Signature:\"xylo_library_block\"}]}}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "xylo_library:internal/blocks/placed_block"
+  }
+}

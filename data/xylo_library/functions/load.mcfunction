@@ -126,6 +126,7 @@ team modify xlib.no_collision collisionRule never
 
 # internal load
 function xylo_library:internal/gui/generate/load
+function xylo_library:internal/hit_detection/load
 
 # utilities load
 function xylo_library:utilities/uuid/load

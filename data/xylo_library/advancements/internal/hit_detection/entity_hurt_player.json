@@ -1,0 +1,399 @@
+{
+  "criteria": {
+    "direct_has_no_id": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.no_id\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_0_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.0_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_0_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.0_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_0_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.0_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_1_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.1_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_1_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.1_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_1_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.1_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_2_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.2_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_2_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.2_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_2_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.2_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_3_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.3_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_3_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.3_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_3_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.3_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_4_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.4_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_4_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.4_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_4_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.4_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_5_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.5_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_5_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.5_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_5_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.5_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_6_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.6_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_6_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.6_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_6_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.6_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_7_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.7_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_7_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.7_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_7_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.7_2\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_8_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.8_0\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_8_1": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.8_1\"]}"
+            }
+          }
+        }
+      }
+    },
+    "drt_bit_8_2": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"xlib.internal.hit_detection.8_2\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "drt_bit_0_0",
+      "drt_bit_0_1",
+      "drt_bit_0_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_1_0",
+      "drt_bit_1_1",
+      "drt_bit_1_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_2_0",
+      "drt_bit_2_1",
+      "drt_bit_2_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_3_0",
+      "drt_bit_3_1",
+      "drt_bit_3_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_4_0",
+      "drt_bit_4_1",
+      "drt_bit_4_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_5_0",
+      "drt_bit_5_1",
+      "drt_bit_5_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_6_0",
+      "drt_bit_6_1",
+      "drt_bit_6_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_7_0",
+      "drt_bit_7_1",
+      "drt_bit_7_2",
+      "direct_has_no_id"
+    ],
+    [
+      "drt_bit_8_0",
+      "drt_bit_8_1",
+      "drt_bit_8_2",
+      "direct_has_no_id"
+    ]
+  ],
+  "rewards": {
+    "function": "xylo_library:internal/hit_detection/advancement/entity_hurt_player/reward"
+  }
+}

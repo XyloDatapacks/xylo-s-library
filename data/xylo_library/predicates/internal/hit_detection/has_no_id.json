@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "xlib.internal.hit_detection.id": {
+        "min": 0,
+        "max": 19682
+      }
+    }
+  }
+}

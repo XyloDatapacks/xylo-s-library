@@ -33,6 +33,8 @@ scoreboard players operation #xlib.timer.5sec xlib.op %= #100 xconst
 
 #==<Pre Tick>==#
 
+function xylo_library:internal/hit_detection/tick
+
 execute as @e[type=#xylo_library:air_toggle,tag=xlib.internal.air_toggle] if score @s xlib.internal.air_toggle = #xlib.time xlib.op run function xylo_library:internal/air_toggle/start
 
 # check entities exist

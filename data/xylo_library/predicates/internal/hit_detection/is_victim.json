@@ -1,0 +1,24 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "xlib.internal.hit_detection.id": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$victim"
+        },
+        "score": "xlib.internal.hit_detection._"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$victim"
+        },
+        "score": "xlib.internal.hit_detection._"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "parent": "xylo_library:revoke",
   "criteria": {
     "direct_has_no_id": {
       "trigger": "minecraft:player_hurt_entity",

@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "xlib.player.wfoas.used_mh": 0,
+      "xlib.player.wfoas.used_oh": 1
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": [
+            "minecraft:warped_fungus_on_a_stick"
+          ],
+          "nbt": "{xylo_library:{block:{}}}"
+        }
+      }
+    }
+  }
+]

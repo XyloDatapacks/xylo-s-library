@@ -47,6 +47,15 @@ execute store success score @s xlib.player.taken_damage run scoreboard players r
 # join
 execute store success score @s xlib.player.joining run scoreboard players reset @s[scores={xlib.player.leave_game=1..}] xlib.player.leave_game
 
+# xlib.player.wfoas.used
+execute store success score @s xlib.player.wfoas.used run scoreboard players reset @s[scores={xlib.player.wfoas.used_stat=1..}] xlib.player.wfoas.used_stat
+execute store success score @s xlib.player.wfoas.used_mh if predicate xylo_library:player/wfoas/used_mh
+execute store success score @s xlib.player.wfoas.used_oh if predicate xylo_library:player/wfoas/used_oh
+
+# place block
+execute if predicate xylo_library:internal/blocks/place_mh run function xylo_library:internal/blocks/place_mainhand
+execute if predicate xylo_library:internal/blocks/place_oh run function xylo_library:internal/blocks/place_offhand
+
 #==<Double Sneak Detection>==#
 
 # double sneak

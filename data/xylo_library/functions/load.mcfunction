@@ -107,6 +107,12 @@ scoreboard objectives add xlib.player.inventory_changed dummy
 scoreboard objectives add xlib.player.selected_slot_old dummy
 scoreboard objectives add xlib.player.selected_slot_changed dummy
 
+# wfoas
+scoreboard objectives add xlib.player.wfoas.used_stat minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add xlib.player.wfoas.used dummy
+scoreboard objectives add xlib.player.wfoas.used_mh dummy
+scoreboard objectives add xlib.player.wfoas.used_oh dummy
+
 # utilities
 scoreboard objectives add xlib.utilities.un_agro.reset_time dummy
 

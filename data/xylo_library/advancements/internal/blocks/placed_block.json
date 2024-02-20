@@ -1,4 +1,5 @@
 {
+  "parent": "xylo_library:revoke",
   "criteria": {
     "placed_machine_block": {
       "trigger": "minecraft:placed_block",

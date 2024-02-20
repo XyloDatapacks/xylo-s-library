@@ -15,5 +15,5 @@ execute unless data storage xylo_library:op place_block.tag.xylo_library.block r
 execute unless function xylo_library:internal/blocks/place/start run return fail
 
 # if placed, remove one from hand
-execute unless data storage xylo_library:op place_block.tag.xylo_library.block{consume_on_use:0b} run item modify entity @s weapon.offhand xylo_library:remove_count/1
+execute unless data storage xylo_library:op place_block.tag.xylo_library.block{consume_on_use:0b} run item modify entity @s[gamemode=!creative] weapon.offhand xylo_library:remove_count/1
 return 1

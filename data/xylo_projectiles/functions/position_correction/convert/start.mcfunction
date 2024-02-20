@@ -7,7 +7,7 @@
 execute on passengers if entity @s[tag=xproj.position_correction.with_aoe] run return run scoreboard players operation @s xproj.position_correction.damage > #xproj.position_correction.convert.damage xproj.op
 
 # add module
-summon minecraft:item_display ~ ~ ~ {Tags:["xproj.position_correction.auto_kill","xproj.position_correction.auto_correction","xproj.position_correction.convert.new"],Passengers:[{id:"minecraft:area_effect_cloud",Tags:["xproj.position_correction.auto_kill","xproj.position_correction"],Duration:1000000}]}
+summon minecraft:item_display ~ ~ ~ {Tags:["smithed.entity","smithed.strict","xproj.position_correction.auto_kill","xproj.position_correction.auto_correction","xproj.position_correction.convert.new"],Passengers:[{id:"minecraft:area_effect_cloud",Tags:["smithed.entity","smithed.strict","xproj.position_correction.auto_kill","xproj.position_correction"],Duration:1000000}]}
 ride @e[type=minecraft:item_display,distance=..0.01,tag=xproj.position_correction.convert.new,limit=1] mount @s
 
 execute on passengers run scoreboard players operation @s[tag=xproj.position_correction.convert.new] xproj.position_correction.damage = #xproj.position_correction.convert.damage xproj.op

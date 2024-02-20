@@ -17,13 +17,15 @@ execute store result score @s xlib.player.motion_z run data get storage xylo_lib
 
 execute store result score @s xlib.player.on_ground run data get storage xylo_library:op player_data.OnGround
 
+execute store result score @s xlib.player.health_nbt run data get storage xylo_library:op player_data.Health 100
+execute store result score @s xlib.player.max_health run attribute @s generic.max_health get 100
+
 #==<Action Detection>==#
 
 # inventory changed
 execute store success score @s xlib.player.inventory_changed run advancement revoke @s only xylo_library:player/inventory_changed
 
 # death and respawn
-execute store result score @s xlib.player.health_nbt run data get storage xylo_library:op player_data.Health 100
 execute store success score @s xlib.player.died run scoreboard players reset @s[scores={xlib.player._died=1..}] xlib.player._died
 scoreboard players set @s[scores={xlib.player.reapawn_status=1}] xlib.player.reapawn_status 0
 scoreboard players set @s[scores={xlib.player.reapawn_status=-1,xlib.player.health_nbt=1..}] xlib.player.reapawn_status 1

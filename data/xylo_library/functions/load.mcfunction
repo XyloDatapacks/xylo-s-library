@@ -79,6 +79,7 @@ scoreboard objectives add xlib.internal.air_toggle dummy
 scoreboard objectives add xlib.player.selected_slot dummy
 scoreboard objectives add xlib.player.health_obj health
 scoreboard objectives add xlib.player.health_nbt dummy
+scoreboard objectives add xlib.player.max_health dummy
 scoreboard objectives add xlib.player._died minecraft.custom:minecraft.deaths
 scoreboard objectives add xlib.player.died dummy
 scoreboard objectives add xlib.player.reapawn_status dummy

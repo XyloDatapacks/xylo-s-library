@@ -22,13 +22,13 @@ execute if block ~ ~ ~ minecraft:player_wall_head[facing=east] run scoreboard pl
 execute if block ~ ~ ~ minecraft:player_wall_head[facing=south] run scoreboard players set $face_placement xlib.internal.blocks.block_data 5
 execute if block ~ ~ ~ minecraft:player_wall_head[facing=west] run scoreboard players set $face_placement xlib.internal.blocks.block_data 6
 
-data remove storage xylo_library:op custom_block_id
-data modify storage xylo_library:op custom_block_id set from block ~ ~ ~ SkullOwner.Name
+data remove storage xylo_library:op place_callback
+data modify storage xylo_library:op place_callback.path set from block ~ ~ ~ SkullOwner.Name
 
 scoreboard players set $placed_block xlib.internal.blocks.block_data 0
 scoreboard players remove $player_head_count xlib.internal.blocks.block_data 1
 
-function #xylo_library:custom_block_place
+function xylo_library:internal/blocks/placed/callback with storage xylo_library:op place_callback
 
 # prevent multi-machines
 execute store result score $entity_count xlib.internal.blocks.block_data if entity @e[type=minecraft:marker,tag=xlib.internal.blocks.custom_block,distance=..0.1]

@@ -18,3 +18,4 @@ advancement revoke @s only xylo_library:internal/hit_detection/entity_hurt_playe
 
 # Run the provided functions that work off of this reward function
 function #xylo_library:player_is_hurt_by_entity
+

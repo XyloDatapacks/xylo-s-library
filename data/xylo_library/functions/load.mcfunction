@@ -46,6 +46,7 @@ scoreboard players set #25 xconst 25
 scoreboard players set #30 xconst 30
 scoreboard players set #36 xconst 36
 scoreboard players set #40 xconst 40
+scoreboard players set #45 xconst 45
 scoreboard players set #50 xconst 50
 scoreboard players set #60 xconst 60
 scoreboard players set #80 xconst 80

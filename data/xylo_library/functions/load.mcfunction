@@ -44,11 +44,14 @@ scoreboard players set #19 xconst 19
 scoreboard players set #20 xconst 20
 scoreboard players set #25 xconst 25
 scoreboard players set #30 xconst 30
+scoreboard players set #33 xconst 33
 scoreboard players set #36 xconst 36
 scoreboard players set #40 xconst 40
 scoreboard players set #45 xconst 45
 scoreboard players set #50 xconst 50
 scoreboard players set #60 xconst 60
+scoreboard players set #66 xconst 66
+scoreboard players set #75 xconst 75
 scoreboard players set #80 xconst 80
 scoreboard players set #90 xconst 90
 scoreboard players set #99 xconst 99
